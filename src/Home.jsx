@@ -7,7 +7,7 @@ export function Home({theme}){
     return(
         <div>
             <main className={`home ${theme}`}>
-                <img src="public/io-icon.png"/>
+                <img src="portfolio/io-icon.png"/>
                 <div className={`line ${theme}`}></div>
                 <h1>Hi, i'm Adan Gonzalez</h1>
                 <h3>Software Engineer And Video Editor</h3>
@@ -18,7 +18,7 @@ export function Home({theme}){
                 <section className='roles-item'>
                     <p>El mejor rol en el que me desempeño es <strong>Frontend</strong>, debido a que el casi 80% de los proyectos que he realizado dentro de la universidad, mi rol principal siempre ha sido diseñar el <strong>Frontend</strong> de nuestro proyecto.</p>
                     <div className={`rol ${theme}`}>
-                        <img src='public/icon/page.png'></img>
+                        <img src='portfolio/icon/page.png'></img>
                         <h1>Frontend</h1>
                     </div>
                 </section>
@@ -26,7 +26,7 @@ export function Home({theme}){
                 <section className='roles-item left'>
                     <p>Dentro del <strong>Backend</strong> no tengo mucha experiencia, pero he sido auxiliar de este rol dentro de varios proyectos.</p>
                     <div className={`rol ${theme}`}>
-                        <img src='public/icon/settings.png'></img>
+                        <img src='portfolio/icon/settings.png'></img>
                         <h1>Backend</h1>
                     </div>
                 </section>
@@ -34,7 +34,7 @@ export function Home({theme}){
                 <section className='roles-item'>
                     <p>Junto a un equipo de mi salon hemos desarrollado una aplicación móvil bastante funcional en 2 meses, yo fui principalmente <strong>Frontend</strong>, y auxiliar de <strong>Backend y Data Base</strong></p>
                     <div className={`rol ${theme}`}>
-                        <img src='public/icon/iphone.png'></img>
+                        <img src='portfolio/icon/iphone.png'></img>
                         <h1>Mobile</h1>
                     </div>
                 </section>

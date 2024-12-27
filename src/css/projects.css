@@ -1,0 +1,52 @@
+.projects-list{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 3%;
+    height: 55vh;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    width: 20vw;
+    height: 50vh;
+
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 2px;
+    transition: all ease-in-out 0.2s;
+}
+
+.project-card.dark{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.project-card.white{
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.project-card:hover{
+    height: 52vh;
+}
+
+.project-card:hover img{
+    height: 25%;
+}
+
+.project-card p{
+    font-weight: 600;
+    margin: 0 5%;
+    color: #838383;
+}
+
+.project-card img{
+    transition: all ease-in-out 0.2s;
+    margin: 10% 0 0 0;
+    height: 20%;
+    border-radius: 12px;
+}

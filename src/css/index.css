@@ -13,6 +13,28 @@ p{
   font-size: 1vw;
 }
 
+.generic-container{
+  display: flex;
+  flex-direction: column;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.generic-container.white{
+  background-color: white;
+  color: black;
+}
+
+.generic-container.dark{
+  background-color: #1a1a1a;
+  color: white;
+}
+
 .line{
   width: 50vw;
   height: 0.5vh;
