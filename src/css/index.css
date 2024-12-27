@@ -1,0 +1,41 @@
+body{ 
+  margin: 0;
+  font-family: "Poppins",sans-serif,arial;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+h1{
+  font-size: 2vw;
+}
+
+p{
+  font-size: 1vw;
+}
+
+.generic-container{
+  display: flex;
+  flex-direction: column;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  background-color: black;
+  width: 50vw;
+  height: 0.5vh;
+  border-radius: 32px;
+  margin: 2vh 0;
+}
+
+.vertical-line{
+  background-color: black;
+  width: 0.5vw;
+  height: 2.5vh;
+  border-radius: 32px;
+  
+}
