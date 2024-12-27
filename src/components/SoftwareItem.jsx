@@ -1,6 +1,6 @@
-export function SoftwareItem({children}){
+export function SoftwareItem({theme,children}){
     return(
-        <div>
+        <div className={`one-item ${theme}`}>
             <img src={`public/software/${children}.svg`} />
         </div>
     );

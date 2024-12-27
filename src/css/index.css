@@ -13,29 +13,48 @@ p{
   font-size: 1vw;
 }
 
-.generic-container{
-  display: flex;
-  flex-direction: column;
-  
-  width: 100vw;
-  height: 100vh;
-  
-  justify-content: center;
-  align-items: center;
-}
-
 .line{
-  background-color: black;
   width: 50vw;
   height: 0.5vh;
   border-radius: 32px;
   margin: 2vh 0;
 }
 
-.vertical-line{
+.line.white{
   background-color: black;
+}
+
+.line.dark{
+  background-color: white;
+}
+
+.vertical-line{
+  
   width: 0.5vw;
   height: 2.5vh;
   border-radius: 32px;
-  
+}
+
+.vertical-line.dark{
+  background-color: white;
+}
+
+.vertical-line.white{
+  background-color: black;
+}
+
+.theme{
+  position: absolute;
+  top: 1.5vh;
+  left: 1vw;
+  cursor: pointer;
+}
+
+.theme img{
+  height: 3vh;
+  transition: all ease-in-out 0.1s;
+}
+
+.theme img:hover{
+  height: 3.3vh;
 }

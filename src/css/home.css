@@ -7,8 +7,18 @@
     
     justify-content: center;
     align-items: center;
-    
+}
+
+.home.white{
+    transition: all ease-in-out 0.2s;
     background-color: #F4F4F4;
+    color: black;
+}
+
+.home.dark{
+    transition: all ease-in-out 0.2s;
+    background-color: #1d1d1d;
+    color: white;
 }
 
 .home img{
@@ -34,6 +44,16 @@
     height: auto;
 
     align-items: center;
+}
+
+.roles.white{
+    background-color: white;
+    color: black;
+}
+
+.roles.dark{
+    background-color: #1a1a1a;
+    color: white;
 }
 
 .rol h1{
@@ -77,6 +97,13 @@
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
 }
 
+.rol.white{
+    background-color: #F4F4F4;
+}
+.rol.dark{
+    background-color: #1d1d1d;
+}
+
 .roles-item div img{
     height: 12vh;
 }
@@ -90,6 +117,16 @@
     height: auto;
 
     align-items: center;
+}
+
+.tools.white{
+    background-color: white;
+    color: black;
+}
+
+.tools.dark{
+    background-color: #1a1a1a;
+    color: white;
 }
 
 .tools h1{
@@ -117,7 +154,13 @@
     margin-bottom: 10vh;
 }
 
-.items div{
+.items img{
+    margin: auto;
+    height: 5vw;
+    transition: all ease-in-out 0.2s;
+}
+
+.one-item{
     display: flex;
     align-self: center;
     
@@ -127,20 +170,22 @@
     border-radius: 8px;
     
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
-    background-color: #F4F4F4;
+    
     transition: all ease-in-out 0.2s;
 }
 
-.items div:hover{
-    background-color: #d1d1d1;
+.one-item.dark{
+    background-color: #1d1d1d;
 }
 
-.items img{
-    margin: auto;
-    height: 5vw;
-    transition: all ease-in-out 0.2s;
+.one-item.dark:hover img{
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.2));
 }
 
-.items div:hover img{
-    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.5));
+.one-item.white{
+    background-color: #f4f4f4;
+}
+
+.one-item.white:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
 }
