@@ -14,7 +14,7 @@ export function Home({theme}){
             </main>
             
             <section className={`roles ${theme}`}>
-                <h1>Roles</h1>
+                <h1>Experiencia</h1>
                 <section className='roles-item'>
                     <p>El mejor rol en el que me desempeño es <strong>Frontend</strong>, debido a que el casi 80% de los proyectos que he realizado dentro de la universidad, mi rol principal siempre ha sido diseñar el <strong>Frontend</strong> de nuestro proyecto.</p>
                     <div className={`rol ${theme}`}>

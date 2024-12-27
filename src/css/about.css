@@ -1,0 +1,34 @@
+.ab-info{
+    width: 50%;
+}
+
+.ab-info header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ab-info h1{
+    margin: 0;
+}
+
+.ab-image{
+    border-radius: 50%;
+}
+
+.social-media{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 40vw;
+    height: 6vh;
+    
+
+    bottom: 2vh;
+}
+
+.social-media img{
+    height: 80%;
+}

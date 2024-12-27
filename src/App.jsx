@@ -1,9 +1,10 @@
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { TopBar } from "./components/TopBar";
+import { Theme } from "./components/Theme";
 import { Home } from "./Home";
 import { Projects } from "./Projects";
 import { Editor } from "./Editor";
-import { Theme } from "./components/Theme";
+import { AboutMe } from "./AboutMe";
 
 let theme = 'dark';
 export function App({}){
@@ -23,6 +24,8 @@ export function App({}){
                 return <Projects theme={theme}/>
             case 2:
                 return <Editor theme={theme}/>
+            case 3:
+                return <AboutMe theme={theme}/>
             default:
                 return <Home theme={theme}/>
         }
