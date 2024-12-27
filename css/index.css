@@ -1,0 +1,60 @@
+body{ 
+  margin: 0;
+  font-family: "Poppins",sans-serif,arial;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+h1{
+  font-size: 2vw;
+}
+
+p{
+  font-size: 1vw;
+}
+
+.line{
+  width: 50vw;
+  height: 0.5vh;
+  border-radius: 32px;
+  margin: 2vh 0;
+}
+
+.line.white{
+  background-color: black;
+}
+
+.line.dark{
+  background-color: white;
+}
+
+.vertical-line{
+  
+  width: 0.5vw;
+  height: 2.5vh;
+  border-radius: 32px;
+}
+
+.vertical-line.dark{
+  background-color: white;
+}
+
+.vertical-line.white{
+  background-color: black;
+}
+
+.theme{
+  position: absolute;
+  top: 1.5vh;
+  left: 1vw;
+  cursor: pointer;
+}
+
+.theme img{
+  height: 3vh;
+  transition: all ease-in-out 0.1s;
+}
+
+.theme img:hover{
+  height: 3.3vh;
+}
