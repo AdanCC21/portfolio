@@ -1,7 +1,7 @@
 import './css/about.css'
 
-const socialRouteDark = 'portfolio/social/dark/';
-const socialRouteWhite = 'portfolio/social/white/';
+const socialRouteDark = 'social/dark/';
+const socialRouteWhite = 'social/white/';
 
 export function AboutMe({ theme }) {
 
