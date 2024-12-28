@@ -1,7 +1,12 @@
 .details{
     width: 50%;
-    margin-bottom: 1%;
-    
+    margin-bottom: 2%;
+    transition: background-color ease-in-out 0.2s;
+    border-radius: 16px;
+}
+
+.title{
+    margin-bottom: 0;
 }
 
 .details.dark header{
@@ -14,6 +19,18 @@
     transition: all ease-in-out 0.2s;
     color: black;
     background-color: #f4f4f4;
+}
+
+.details.dark:hover{
+    background-color: #212121;
+}
+
+.details.white:hover{
+    background-color: #ededed;
+}
+
+.details.white:hover header{
+    background-color: #ededed;
 }
 
 .details header{

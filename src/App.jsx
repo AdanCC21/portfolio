@@ -14,8 +14,9 @@ export function App({}){
     if (whiteMode){
         theme = 'white';
     }else{
-        theme = 'dark'
+        theme = 'dark';
     }
+
     const page = ()=>{
         switch (currentPage){
             case 0:

@@ -13,6 +13,9 @@
 }
 
 .ab-image{
+    width: 20%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -29,6 +32,11 @@
     bottom: 2vh;
 }
 
-.social-media img{
+.social-media a {
     height: 80%;
+}
+
+.social-media img{
+    height: 100%;
+    cursor: pointer;
 }
