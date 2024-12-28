@@ -4,6 +4,8 @@ import { EditorDetails } from './components/EditorDetails'
 
 export function Editor({ theme }) {
 
+    // <a href='https://youtu.be/9HEGNLexJgc?si=TsiOQuAQTXFXHXEr' className='example'>Ejemplo de mi estilo</a>
+
     return (
         <div className={`generic-container ${theme}`}>
             <h1 className='title'>Editor</h1>

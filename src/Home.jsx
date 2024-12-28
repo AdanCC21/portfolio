@@ -1,7 +1,6 @@
 import './css/home.css'
 import { Item } from './components/item';
 import { SoftwareItem } from './components/SoftwareItem';
-import { Copyright } from './Copyright';
 import { useRef } from 'react';
 
 export function Home({ theme }) {
@@ -16,11 +15,11 @@ export function Home({ theme }) {
     return (
         <div>
             <main className={`home ${theme}`}>
-                <img className='home-picture' src="portfolio/traje.png" />
+                <img className='home-picture' src="traje.png" />
                 <div className={`line ${theme}`}></div>
                 <h1>Hola, soy Adan Gonzalez</h1>
                 <h3>Ingeniero en Software y Editor de Videos</h3>
-                <img onClick={goDown} src={`portfolio/icon/${theme}/arrowDown.png`} className='arrow' />
+                <img onClick={goDown} src={`icon/${theme}/arrowDown.png`} className='arrow' />
             </main>
 
             <section
@@ -30,7 +29,7 @@ export function Home({ theme }) {
                 <section className='roles-item'>
                     <p>El mejor rol en el que me desempeño es <strong>Frontend</strong>, debido a que el casi 80% de los proyectos que he realizado dentro de la universidad mi rol principal siempre ha sido diseñar el <strong>Frontend</strong> de nuestro proyecto.</p>
                     <div className={`rol ${theme}`}>
-                        <img src='portfolio/icon/page.png'></img>
+                        <img src='icon/page.png'></img>
                         <h1>Frontend</h1>
                     </div>
                 </section>
@@ -38,7 +37,7 @@ export function Home({ theme }) {
                 <section className='roles-item left'>
                     <p>Dentro del <strong>Backend</strong> no tengo mucha experiencia, pero he sido auxiliar de <strong>Backend</strong> dentro de varios proyectos, e hice todo el backend de una página de ventas usando spring boot.</p>
                     <div className={`rol ${theme}`}>
-                        <img src='portfolio/icon/settings.png'></img>
+                        <img src='icon/settings.png'></img>
                         <h1>Backend</h1>
                     </div>
                 </section>
@@ -46,7 +45,7 @@ export function Home({ theme }) {
                 <section className='roles-item'>
                     <p>Junto a un equipo de mi salon, hemos desarrollado una aplicación móvil bastante funcional en 2 meses, yo fui principalmente <strong>Frontend</strong>, y auxiliar de <strong>Backend</strong> haciendo no solo el diseño de como se verian las cosas, si no tambien la logica de como se incorporara el contenido a la pantalla</p>
                     <div className={`rol ${theme}`}>
-                        <img src='portfolio/icon/iphone.png'></img>
+                        <img src='icon/iphone.png'></img>
                         <h1>Móvile</h1>
                     </div>
                 </section>

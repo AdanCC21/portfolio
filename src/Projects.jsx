@@ -11,7 +11,7 @@ export function Projects({ theme }) {
                 
                 <ProjectItem theme={theme} imageName={"pooyecto"} title={"Pooyecto"} link={"https://github.com/Anrago/POOyecto"}>El juego de serpientes y escaleras hecho para pc, con un máximo de 4 jugadores y próximamente multijugador, hecha con C++ y Raylib</ProjectItem>
                 
-                <ProjectItem theme={theme} imageName={"petCare"} title={"Pet Care"} link={"https://github.com/andreagori/PetCare"} >Una página web dedicada al cuidado de nuestras mascotas, llevando a cabo un registro diario de las actividades de estas mismas, hecha con Html, Css, Asp.net y Bootstrap</ProjectItem>
+                <ProjectItem theme={theme} imageName={"petCare"} title={"Pet Care"} link={"https://github.com/tessarivas/PetCare"} >Una página web dedicada al cuidado de nuestras mascotas, llevando a cabo un registro diario de las actividades de estas mismas, hecha con Html, Css, Asp.net y Bootstrap</ProjectItem>
             </section>
         </div>
     );
