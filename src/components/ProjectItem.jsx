@@ -1,9 +1,9 @@
-export function ProjectItem({ imageName, title, children, theme }) {
+export function ProjectItem({ imageName, title, children, theme, link }) {
     return (
-        <div className={`project-card ${theme}`}>
-            <img src={`project/${imageName}.png`} />
+        <a className={`project-card ${theme}`} href={link} target="blank">
+            <img src={`portfolio/project/${imageName}.png`} />
             <h1>{title}</h1>
             <p>{children}</p>
-        </div>
+        </a>
     );
 }

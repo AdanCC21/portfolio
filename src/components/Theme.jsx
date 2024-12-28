@@ -8,7 +8,7 @@ export function Theme({currentMode, setCurrentMode}){
     }
     return(
         <div className="theme">
-            <img src={`icon/${mode}.png`} onClick={()=> setCurrentMode(!currentMode)}></img>
+            <img src={`portfolio/icon/${mode}.png`} onClick={()=> setCurrentMode(!currentMode)}></img>
         </div>
     );
 }

@@ -23,14 +23,11 @@ export function Editor({ theme }) {
             </EditorDetails>
 
             <EditorDetails theme={theme} title={"Que edito"} imageName={'ayuda'}>
-                - Gameplays<br/>
-                - Edits<br/>
-                - Clips para TikTok o Instagram<br/>
-                - Trailers de twitch<br/>
-                - Animaciones sencillas con imagenes<br/>
+                - Gameplays<br />
+                - Clips para TikTok/Instagram/Youtube Shorts<br />
+                - Animaciones sencillas<br />
                 - Video reacciones
             </EditorDetails>
-
         </div>
     );
 }
