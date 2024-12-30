@@ -3,7 +3,7 @@
     justify-content: space-around;
     width: 50%;
     margin-top: 3%;
-    height: 65vh;
+    height: 55vh;
 }
 
 .project-card{
@@ -13,7 +13,7 @@
     align-items: center;
     
     width: 15vw;
-    height: 60vh;
+    height: 50vh;
 
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 2px;
@@ -46,7 +46,7 @@
 }
 
 .project-card:hover{
-    height: 62vh;
+    height: 52vh;
 }
 
 .project-card:hover .icon{
