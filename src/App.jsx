@@ -24,8 +24,6 @@ export function App({}){
             case 1:
                 return <Projects theme={theme}/>
             case 2:
-                return <Editor theme={theme}/>
-            case 3:
                 return <AboutMe theme={theme}/>
             default:
                 return <Home theme={theme}/>

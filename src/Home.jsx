@@ -17,9 +17,24 @@ export function Home({ theme }) {
             <main className={`home ${theme}`}>
                 <img className='home-picture' src="traje.png" />
                 <div className={`line ${theme}`}></div>
-                <h1>Hola, soy Adan Gonzalez</h1>
+                <h1>Hola, soy <strong>Adan Gonzalez</strong></h1>
                 <h3>Ingeniero en Software y Editor de Videos</h3>
                 <img onClick={goDown} src={`icon/${theme}/arrowDown.png`} className='arrow' />
+                <section className='social-media-home'>
+                    <a href='https://www.instagram.com/adan_gcm' target='blank'>
+                        <img src={theme === 'dark' ? `social/dark/instagram.png` : `social/white/instagram.png`}></img>
+                    </a>
+                    <a href='https://github.com/AdanCC21' target='blank'>
+                        <img src={theme === 'dark' ? `social/dark/github.png` : `social/white/github.png`}></img>
+                    </a>
+                    <a href='mailto:adangzcs.gemial@gmail.com'>
+                        <img src={theme === 'dark' ? `social/dark/gmail.png` : `social/white/gmail.png`}></img>
+                    </a>
+                    <a href='https://www.linkedin.com/in/adan-gonzalez-cese%C3%B1a-584411338/' target='blank'>
+                        <img src={theme === 'dark' ? `social/dark/linkedin.png` : `social/white/linkedin.png`}></img>
+                    </a>
+
+                </section>
             </main>
 
             <section
@@ -27,7 +42,7 @@ export function Home({ theme }) {
                 className={`roles ${theme}`}>
                 <h1>Experiencia</h1>
                 <section className='roles-item'>
-                    <p>El mejor rol en el que me desempeño es <strong>Frontend</strong>, debido a que el casi 80% de los proyectos que he realizado dentro de la universidad mi rol principal siempre ha sido diseñar el <strong>Frontend</strong> de nuestro proyecto.</p>
+                    <p>El mejor rol en el que me desempeño es el de <strong>Frontend</strong>, ya que en el 80% de los proyectos que he realizado dentro de la universidad, mi principal responsabilidad ha sido diseñar el <strong>Frontend</strong> de los mismos.</p>
                     <div className={`rol ${theme}`}>
                         <img src='icon/page.png'></img>
                         <h1>Frontend</h1>
@@ -35,7 +50,7 @@ export function Home({ theme }) {
                 </section>
 
                 <section className='roles-item left'>
-                    <p>Dentro del <strong>Backend</strong> no tengo mucha experiencia, pero he sido auxiliar de <strong>Backend</strong> dentro de varios proyectos, e hice todo el backend de una página de ventas usando spring boot.</p>
+                    <p>Quiero aprender más sobre este campo, ya que solo he desarrollado una página con <strong>Spring Boot</strong> y he sido auxiliar en el <strong>Backend</strong> de varios proyectos. Sin embargo, siento que puedo adquirir mucho más conocimiento y experiencia.</p>
                     <div className={`rol ${theme}`}>
                         <img src='icon/settings.png'></img>
                         <h1>Backend</h1>
@@ -43,10 +58,10 @@ export function Home({ theme }) {
                 </section>
 
                 <section className='roles-item'>
-                    <p>Junto a un equipo de mi salon, hemos desarrollado una aplicación móvil bastante funcional en 2 meses, yo fui principalmente <strong>Frontend</strong>, y auxiliar de <strong>Backend</strong> haciendo no solo el diseño de como se verian las cosas, si no tambien la logica de como se incorporara el contenido a la pantalla</p>
+                    <p>Junto a un equipo de mi salón, desarrollamos una <strong>aplicación móvil</strong> funcional en solo dos meses. En este proyecto, mi rol principal fue el de <strong>Frontend</strong>, aunque también participé como auxiliar en el <strong>Backend</strong>.</p>
                     <div className={`rol ${theme}`}>
                         <img src='icon/iphone.png'></img>
-                        <h1>Móvile</h1>
+                        <h1>Desarrollo móvil</h1>
                     </div>
                 </section>
             </section>
@@ -58,71 +73,59 @@ export function Home({ theme }) {
                 </header>
 
                 <section className='items'>
-                    <Item theme={theme}>c</Item>
-                    <Item theme={theme}>cpp</Item>
-                    <Item theme={theme}>dart</Item>
-                    <Item theme={theme}>python</Item>
-                    <Item theme={theme}>java</Item>
-                    <Item theme={theme}>javascript</Item>
-                    <Item theme={theme}>html</Item>
-                    <Item theme={theme}>css</Item>
+                    <Item tag={"C"} theme={theme}>c</Item>
+                    <Item tag={"C++"} theme={theme}>cpp</Item>
+                    <Item tag={"Dart"} theme={theme}>dart</Item>
+                    <Item tag={"Python"} theme={theme}>python</Item>
+                    <Item tag={"Java"} theme={theme}>java</Item>
+                    <Item tag={"JavaScript"} theme={theme}>javascript</Item>
                 </section>
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${theme}`}></div>
-                    <h1>FrameWorks</h1>
+                    <h1>Frameworks</h1>
                 </header>
 
                 <section className='items'>
-                    <Item theme={theme}>raylib</Item>
-                    <Item theme={theme}>flutter</Item>
-                    <Item theme={theme}>react</Item>
+                    <Item tag={"Flutter"} theme={theme}>flutter</Item>
+                    <Item tag={"React"} theme={theme}>react</Item>
                 </section>
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${theme}`}></div>
-                    <h1>Software</h1>
+                    <h1>Softwares</h1>
                 </header>
 
                 <section className='items'>
-                    <SoftwareItem theme={theme}>git</SoftwareItem>
-                    <SoftwareItem theme={theme}>github</SoftwareItem>
-                    <SoftwareItem theme={theme}>intellij</SoftwareItem>
-                    <SoftwareItem theme={theme}>visualStudioCode</SoftwareItem>
-                    <SoftwareItem theme={theme}>visualStudio</SoftwareItem>
-                    <SoftwareItem theme={theme}>premiere</SoftwareItem>
-                    <SoftwareItem theme={theme}>photoshop</SoftwareItem>
-                    <SoftwareItem theme={theme}>figma</SoftwareItem>
+                    <SoftwareItem tag={"Git"} theme={theme}>git</SoftwareItem>
+                    <SoftwareItem tag={"GitHub"} theme={theme}>github</SoftwareItem>
+                    <SoftwareItem tag={"IntelliJ"} theme={theme}>intellij</SoftwareItem>
+                    <SoftwareItem tag={"Vs Code"} theme={theme}>visualStudioCode</SoftwareItem>
+                    <SoftwareItem tag={"VS"} theme={theme}>visualStudio</SoftwareItem>
+                    <SoftwareItem tag={"Premiere"} theme={theme}>premiere</SoftwareItem>
+                    <SoftwareItem tag={"Photoshop"} theme={theme}>photoshop</SoftwareItem>
+                    <SoftwareItem tag={"Figma"} theme={theme}>figma</SoftwareItem>
+                </section>
+                
+                <header className='tools-head'>
+                    <div className={`vertical-line ${theme}`}></div>
+                    <h1>Otros</h1>
+                </header>
+
+                <section className='items'>
+                <Item tag={"Raylib"} theme={theme}>raylib</Item>
+                <Item tag={"Html"} theme={theme}>html</Item>
+                <Item tag={"Css"} theme={theme}>css</Item>
                 </section>
             </section>
+
             <footer className={`footer ${theme}`}>
-                
-                <div className={`line ${theme}`}></div>
-                <div className='footerCop'>
-                    <h4>© 2024 Adan Gonzalez Ceseña</h4>
-                    <p>Este sitio fue diseñado y desarrollado por Adan Gonzalez Ceseña utilizando React y las herramientas que este proporciona.
-                    </p>
-                </div>
-                
-                <div className={`line ${theme}`}></div>
                 <section>
-                    <h3>Este sitio fue diseñado con los iconos de la pagina <a href='https://www.flaticon.es'>Flaticon</a> con su respectiva licencia gratis para uso personal o comercial con atribución</h3>
-                    
-                    <a href="https://www.flaticon.es/iconos-gratis/flecha" title="flecha iconos">Flecha iconos creados por Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/figma" title="figma iconos">Figma iconos creados por Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/gmail" title="gmail iconos">Gmail iconos creados por Laisa Islam Ani - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/github" title="github iconos">Github iconos creados por Pixel perfect - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram" title="logotipo de instagram iconos">Logotipo de instagram iconos creados por Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/objeto" title="objeto iconos">Objeto iconos creados por Illustraly - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/dinero" title="dinero iconos">Dinero iconos creados por kosonicon - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/acerca-de" title="acerca de iconos">Acerca de iconos creados por Anggara - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/modo-de-luz" title="modo de luz iconos">Modo de luz iconos creados por Fantasyou - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/modo" title="modo iconos">Modo iconos creados por Yogs144 - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/iphone" title="iphone iconos">Iphone iconos creados por Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/monitor" title="monitor iconos">Monitor iconos creados por Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/ajustes" title="ajustes iconos">Ajustes iconos creados por Pixel perfect - Flaticon</a>
-                    <a href="https://www.flaticon.es/iconos-gratis/linkedin" title="linkedin iconos">Linkedin iconos creados por Google - Flaticon</a>
+                    <h4>© 2024 Adan Gonzalez Ceseña <br/><br/>Correo de contacto adancorp.gemial@gmail.com</h4>
+
+                    <h4>Este sitio fue diseñado con los iconos de la pagina <a href='https://www.flaticon.es'>Flaticon</a> con su respectiva licencia gratis para uso personal o comercial</h4>
                 </section>
+
             </footer>
         </div>
 

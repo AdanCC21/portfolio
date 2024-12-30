@@ -34,7 +34,10 @@
 .social-media a {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 80%;
+    width: 20%;
+    cursor: default;
 }
 
 .social-media img{

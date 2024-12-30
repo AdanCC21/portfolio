@@ -63,6 +63,21 @@ p{
   background-color: white;
 }
 
+.line-70{
+  width: 70vw;
+  height: 0.5vh;
+  border-radius: 32px;
+  margin: 2vh 0;
+}
+
+.line-70.white{
+  background-color: black;
+}
+
+.line-70.dark{
+  background-color: white;
+}
+
 .vertical-line{
   
   width: 0.5vw;
@@ -80,8 +95,9 @@ p{
 
 .theme{
   position: absolute;
+  display: flex;
   top: 1.5vh;
-  left: 1vw;
+  right: 1vw;
   cursor: pointer;
 }
 

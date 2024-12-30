@@ -2,23 +2,29 @@
     position: absolute;
     display: flex;
     
-    width: 30%;
-    height: auto;
+    width: 100vw;
+    height: 7vh;
 
-    justify-content: space-between;
-    
-    top: 2vh;
-    right: 2vw;
+    justify-content: center;
+    align-items: center;
 
     font-size: 1.5vw;
     font-weight: 600;
     color: #838383;
-    cursor: pointer;
 
 }
 
+.top-bar section{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
 .top-bar a{
+    width: 20%;
+    text-align: center;
     transition: all ease-in-out 0.2s;
+    cursor: pointer;
 }
 
 .top-bar a:hover{
