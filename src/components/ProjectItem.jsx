@@ -21,8 +21,8 @@ export function ProjectItem({ imageName, title, children, theme, link, array = [
         <a className={`project-card ${theme}`} href={link} target="_blank" rel="noopener noreferrer">
             <img className="icon" src={`project/${imageName}.png`} alt={title} />
             <h1>{title}</h1>
-            {things()}
             <p>{children}</p>
+            {things()}
         </a>
     );
 }
