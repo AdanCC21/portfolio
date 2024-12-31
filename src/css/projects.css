@@ -71,7 +71,7 @@
 @media (min-width:1024px){
 
     .project-card:hover {
-        height: 52vh;
+        height: 95%;
     }
     
     .project-card:hover .icon {
