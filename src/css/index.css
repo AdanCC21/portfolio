@@ -1,99 +1,142 @@
-body{ 
+body {
   margin: 0;
-  font-family: "Poppins",sans-serif,arial;
+  font-family: "Poppins", sans-serif, arial;
   font-style: normal;
   overflow-x: hidden;
 }
 
-h1{
-  font-size: 2vw;
+html {
+
+  font-size: 16px;
+
+  /* PC */
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+
+  /* Tableta */
+  @media (max-width : 1023px) {
+    font-size: 16px;
+  }
+
+  /* Celular */
+  @media(max-width : 450px) {
+    font-size: 10px;
+  }
 }
 
-h2{
-  font-size: 1.2vw;
+h1 {
+  font-size: 2rem;
 }
 
-h3{
-  font-size: 1vw;
+h2 {
+  font-size: 1.2rem;
 }
 
-p{
-  font-size: 1vw;
+h3 {
+  font-size: 1rem;
 }
 
-.generic-container{
+p {
+  font-size: 1rem;
+}
+
+/* ------------------------------------------------ */
+
+.generic-container {
   display: flex;
   flex-direction: column;
-  
+
   width: 100vw;
   min-height: 100vh;
-  
+
   align-items: center;
   justify-content: center;
   transition: all ease-in-out 0.2s;
 }
 
-.generic-container.row{
+.generic-container.row {
   flex-direction: row;
   justify-content: space-around;
 }
 
-.generic-container.white{
+.generic-container.white {
   background-color: white;
   color: black;
 }
 
-.generic-container.dark{
+.generic-container.dark {
   background-color: #1a1a1a;
   color: white;
 }
 
-.line{
+/* ------------------------------------------------ */
+
+.line {
   width: 50vw;
   height: 0.5vh;
   border-radius: 32px;
   margin: 2vh 0;
 }
 
-.line.white{
+/* celu */
+@media (max-width: 450px) {
+  .line {
+    width: 80vw;
+  }
+}
+/* tableta */
+@media (max-width:1023px){
+    .line{
+      width: 70vw;
+    }
+}
+
+.line.white {
   background-color: black;
 }
 
-.line.dark{
+.line.dark {
   background-color: white;
 }
 
-.line-70{
+/* ------------------------------------------------ */
+
+.line-70 {
   width: 70vw;
   height: 0.5vh;
   border-radius: 32px;
   margin: 2vh 0;
 }
 
-.line-70.white{
+.line-70.white {
   background-color: black;
 }
 
-.line-70.dark{
+.line-70.dark {
   background-color: white;
 }
 
-.vertical-line{
-  
+/* ------------------------------------------------ */
+
+.vertical-line {
+
   width: 0.5vw;
   height: 2.5vh;
   border-radius: 32px;
 }
 
-.vertical-line.dark{
+.vertical-line.dark {
   background-color: white;
 }
 
-.vertical-line.white{
+.vertical-line.white {
   background-color: black;
 }
 
-.theme{
+/* ------------------------------------------------ */
+
+.theme {
   position: absolute;
   display: flex;
   top: 1.5vh;
@@ -101,11 +144,11 @@ p{
   cursor: pointer;
 }
 
-.theme img{
+.theme img {
   height: 3vh;
   transition: all ease-in-out 0.1s;
 }
 
-.theme img:hover{
+.theme img:hover {
   height: 3.3vh;
 }

@@ -3,18 +3,20 @@ import './css/about.css'
 export function AboutMe({ theme }) {
 
     return (
-        <div className={`generic-container row ${theme}`}>
-            <section className='ab-info'>
-                <header>
-                    <h1>Sobre Mi</h1>
-                    <div className={`line ${theme}`}></div>
-                </header>
-                <p>
-                    Soy un estudiante universitario de la Universidad Autónoma de Baja California, estoy estudiando la carrera de ingeniería en Software y Tecnologías Emergentes, planeo graduarme en 2026 y pienso enfocarme en campos como Fronted, Backend, desarrollo de aplicaciones móviles y la creación de Software.<br /><br />
+        <div className={`about-container ${theme}`}>
+            <section className='about-c2'>
+                <section className='ab-info'>
+                    <header>
+                        <h1>Sobre Mi</h1>
+                        <div className={`line ${theme}`}></div>
+                    </header>
+                    <p>
+                        Soy un estudiante universitario de la Universidad Autónoma de Baja California, estoy estudiando la carrera de ingeniería en Software y Tecnologías Emergentes, planeo graduarme en 2026 y pienso enfocarme en campos como Fronted, Backend, desarrollo de aplicaciones móviles y la creación de Software.<br /><br />
 
-                    Respecto a la edición, es un hobby que me gusta mucho, para todos mis pedidos me tomo mi tiempo, debido a que la creatividad y sobre todo las ganas o motivación de editar no son algo que se pueda forzar.</p>
+                        Respecto a la edición, es un hobby que me gusta mucho, para todos mis pedidos me tomo mi tiempo, debido a que la creatividad y sobre todo las ganas o motivación de editar no son algo que se pueda forzar.</p>
+                </section>
+                <img src='informal.jpg' className='ab-image'></img>
             </section>
-            <img src='informal.jpg' className='ab-image'></img>
             
             <section className='social-media'>
                 <a href='https://www.instagram.com/adan_gcm' target='blank'>

@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #838383;
-
 }
+
 
 .top-bar section{
     display: flex;
@@ -26,6 +26,21 @@
     transition: all ease-in-out 0.2s;
     cursor: pointer;
 }
+
+@media (max-width:450px){
+    .top-bar section{
+        align-items: center;
+        width: 90%;
+    }
+}
+
+@media (max-width:1023px){
+    .top-bar section{
+        align-items: center;
+        width: 90%;
+    }
+}
+
 
 .top-bar a:hover{
     color: #4e4e4e;

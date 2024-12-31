@@ -17,7 +17,9 @@ export function Home({ theme }) {
             <main className={`home ${theme}`}>
                 <img className='home-picture' src="traje.png" />
                 <div className={`line ${theme}`}></div>
-                <h1>Hola, soy <strong>Adan Gonzalez</strong></h1>
+                
+                <h1 className='mobile-title'><strong>Adan Gonzalez</strong></h1>
+                <h1 className='pc-title'>Hola, soy <strong>Adan Gonzalez</strong></h1>
                 <h3>Ingeniero en Software y Editor de Videos</h3>
                 <img onClick={goDown} src={`icon/${theme}/arrowDown.png`} className='arrow' />
                 <section className='social-media-home'>
