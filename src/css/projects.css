@@ -83,10 +83,12 @@
 .project-card p {
     font-weight: 600;
     margin: 0 5%;
+    font-size: 1.7vh;
     color: #838383;
 }
 
 .project-card h1 {
+    font-size: 3vh;
     margin-bottom: 0;
 }
 
@@ -137,11 +139,11 @@
     }
 
 }
-@media(max-width:1023px) {
+@media(max-width:1024px) {
 
     .projects-container h1{
         margin-top: 10vh;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 0;
     }
 
@@ -176,4 +178,24 @@
         margin: 10px;
     }
 
+}
+
+@media(max-height:850px){
+
+    .projects-container h1{
+        margin: 10vh 0 0 0;
+    }
+
+    .projects-list{
+        margin: 0;
+        height: 80vh;
+    }
+
+    .project-card{
+        height: 90%;
+    }
+
+    .project-card p{
+        font-size: 2.5vh;
+    }
 }
