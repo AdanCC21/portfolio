@@ -7,6 +7,7 @@
     
     justify-content: center;
     align-items: center;
+    animation: show 0.3s ease-in-out both;
 }
 
 .arrow{
@@ -442,9 +443,9 @@
     }   
 }
 
-.show-up{
+/* .show-up{
     animation: show 0.2s ease-in-out both;
-}
+} */
 
 @keyframes show{
     0%{

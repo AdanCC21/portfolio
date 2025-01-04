@@ -3,6 +3,8 @@ body {
   font-family: "Poppins", sans-serif, arial;
   font-style: normal;
   overflow-x: hidden;
+  background-color: #1d1d1d;
+  color: white;
 }
 
 .dark-mode {
