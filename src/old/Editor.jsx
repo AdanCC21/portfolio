@@ -1,6 +1,6 @@
 
 import './css/editor.css'
-import { EditorDetails } from './components/EditorDetails'
+import { EditorDetails } from '../components/EditorDetails'
 
 export function Editor({ theme }) {
 

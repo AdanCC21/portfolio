@@ -38,6 +38,7 @@
     width: 20%;
     text-align: center;
     cursor: pointer;
+    transition: color ease-in-out 0.2s;
 }
 
 @media (max-width:450px){
@@ -55,8 +56,20 @@
 }
 
 
-.top-bar a:hover{
-    color: #4e4e4e;
+.top-bar.dark a:hover{
+    color: #cecece;
+}
+
+.top-bar.white a:hover{
+    color: #141414;
+}
+
+.selected.dark{
+    color: white;
+}
+
+.selected.white{
+    color: black;
 }
 
 @keyframes bar-dark{

@@ -89,6 +89,7 @@
 .social-media img {
     height: 80%;
     cursor: pointer;
+    transition: height ease-in-out 0.2s;
 }
 
 /* Celular */

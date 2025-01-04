@@ -93,6 +93,7 @@
 
 .social-media-home img{
     height: 80%;
+    transition: height ease-in-out 0.2s;
     
 }
 
@@ -298,12 +299,12 @@
 
 .one-item.dark{
     background-color: #1d1d1d;
-    transition: background-color ease-in-out 0.5s;
+    transition: background-color ease-in-out 0.5s ,filter ease-in-out 0.5s;
 }
 
 .one-item.white{
     background-color: #f4f4f4;
-    transition: background-color ease-in-out 0.5s;
+    transition: background-color ease-in-out 0.5s ,filter ease-in-out 0.5s;
 }
 /* Pc */
 @media (min-width:1024px){
