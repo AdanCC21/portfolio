@@ -15,14 +15,14 @@ export function Home({ theme }) {
     return (
         <div>
             <main className={`home ${theme}`}>
-                <img className='home-picture' src="traje.png" />
-                <div className={`line ${theme}`}></div>
+                <img className='home-picture show-up' src="traje.png" />
+                <div className={`line ${theme} show-up`}></div>
                 
-                <h1 className='mobile-title'><strong>Adan Gonzalez</strong></h1>
-                <h1 className='pc-title'>Hola, soy <strong>Adan Gonzalez</strong></h1>
-                <h3>Ingeniero en Software y Editor de Videos</h3>
-                <img onClick={goDown} src={`icon/${theme}/arrowDown.png`} className='arrow' />
-                <section className='social-media-home'>
+                <h1 className='mobile-title show-up'><strong>Adan Gonzalez</strong></h1>
+                <h1 className='pc-title show-up'>Hola, soy <strong>Adan Gonzalez</strong></h1>
+                <h3 className='show-up'>Ingeniero en Software y Editor de Videos</h3>
+                <img onClick={goDown} src={`icon/${theme}/arrowDown.png`} className='arrow ' />
+                <section className='social-media-home show-up'>
                     <a href='https://www.instagram.com/adan_gcm' target='blank'>
                         <img src={theme === 'dark' ? `social/dark/instagram.png` : `social/white/instagram.png`}></img>
                     </a>

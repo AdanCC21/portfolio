@@ -7,18 +7,10 @@
     
     align-items: center;
     justify-content: space-around;
-    transition: all ease-in-out 0.2s;
+    
 }
 
-.about-container.white {
-    background-color: white;
-    color: black;
-}
 
-.about-container.dark {
-    background-color: #1a1a1a;
-    color: white;
-}
 
 .ab-info {
     width: 50%;
@@ -83,6 +75,7 @@
     height: 6vh;
 
     bottom: 2vh;
+    
 }
 
 .social-media a {
@@ -97,7 +90,6 @@
 .social-media img {
     height: 80%;
     cursor: pointer;
-    transition: all ease-in-out 0.2s;
 }
 
 /* Celular */

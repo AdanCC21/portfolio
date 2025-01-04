@@ -5,6 +5,18 @@ body {
   overflow-x: hidden;
 }
 
+.dark-mode {
+  background-color: #1d1d1d;
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+
+.white-mode {
+  background-color: #F4F4F4;
+  color: black;
+  transition: all ease-in-out 0.5s;
+}
+
 html {
 
   font-size: 16px;
@@ -41,34 +53,6 @@ p {
   font-size: 1rem;
 }
 
-/* ------------------------------------------------ */
-
-.generic-container {
-  display: flex;
-  flex-direction: column;
-
-  width: 100vw;
-  min-height: 100vh;
-
-  align-items: center;
-  justify-content: center;
-  transition: all ease-in-out 0.2s;
-}
-
-.generic-container.row {
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.generic-container.white {
-  background-color: white;
-  color: black;
-}
-
-.generic-container.dark {
-  background-color: #1a1a1a;
-  color: white;
-}
 
 /* ------------------------------------------------ */
 
@@ -85,19 +69,22 @@ p {
     width: 80vw;
   }
 }
+
 /* tableta */
-@media (max-width:1023px){
-    .line{
-      width: 70vw;
-    }
+@media (max-width:1023px) {
+  .line {
+    width: 70vw;
+  }
 }
 
 .line.white {
   background-color: black;
+  transition: background-color ease-in-out 0.5s;
 }
 
 .line.dark {
   background-color: white;
+  transition: background-color ease-in-out 0.5s;
 }
 
 /* ------------------------------------------------ */
@@ -111,10 +98,12 @@ p {
 
 .line-70.white {
   background-color: black;
+  transition: background-color ease-in-out 0.5s;
 }
 
 .line-70.dark {
   background-color: white;
+  transition: background-color ease-in-out 0.5s;
 }
 
 /* ------------------------------------------------ */
@@ -128,10 +117,12 @@ p {
 
 .vertical-line.dark {
   background-color: white;
+  transition: background-color ease-in-out 0.5s;
 }
 
 .vertical-line.white {
   background-color: black;
+  transition: background-color ease-in-out 0.5s;
 }
 
 /* ------------------------------------------------ */
@@ -142,11 +133,12 @@ p {
   top: 1.5vh;
   right: 1vw;
   cursor: pointer;
+  z-index: 3;
 }
 
 .theme img {
   height: 3vh;
-  transition: all ease-in-out 0.1s;
+  transition: height ease-in-out 0.5s;
 }
 
 .theme img:hover {

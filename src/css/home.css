@@ -16,18 +16,6 @@
     cursor: pointer;
 }
 
-.home.white{
-    transition: all ease-in-out 0.2s;
-    background-color: #F4F4F4;
-    color: black;
-}
-
-.home.dark{
-    transition: all ease-in-out 0.2s;
-    background-color: #1d1d1d;
-    color: white;
-}
-
 .home-picture{
     object-fit: cover;
     aspect-ratio: 1/1;
@@ -66,9 +54,11 @@
 
 .home.dark strong{
     color: yellow;
+    transition: color ease-in-out 0.5s;
 }
 .home.white strong{
     color: rgb(77, 160, 255);
+    transition: color ease-in-out 0.5s;
 }
 
 /* ----------- Social ----------- */
@@ -450,4 +440,19 @@
     .footer section{
         width: 70%;
     }   
+}
+
+.show-up{
+    animation: show 0.2s ease-in-out both;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

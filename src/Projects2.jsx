@@ -20,42 +20,28 @@ export function Projects2({ theme }) {
     let [selected, setSel] = useState([true, false, false]);
 
     const changeImage = (index) => {
-        switch (index) {
-            case 1:
-                setSpawn('hide')
-                setSel([true, false, false])
-                setTimeout(() => {
-                    setSpawn('show')
+        setSpawn('')
+        setTimeout(() => {
+            switch (index) {
+                case 1:
+                    setSel([true, false, false])
                     setProject(cookingHub);
-                }, 100);
-                break;
-            case 2:
-                setSpawn('hide')
-                setSel([false, true, false])
-                setTimeout(() => {
-                    setSpawn('show')
+                    break;
+                case 2:
+                    setSel([false, true, false])
                     setProject(pooyecto);
-                }, 100);
-                break;
-            case 3:
-                setSpawn('hide')
-                setSel([false, false, true])
-
-                setTimeout(() => {
-                    setSpawn('show')
-
+                    break;
+                case 3:
+                    setSel([false, false, true])
                     setProject(petCare);
-                }, 100);
-                break;
-            default:
-                setSpawn('hide')
-                setSel([true, false, false])
-                setTimeout(() => {
-                    setSpawn('show')
+                    break;
+                default:
+                    setSel([true, false, false])
                     setProject(cookingHub);
-                }, 100);
-                break;
-        }
+                    break;
+            }
+            setSpawn('fade-out')
+        },10)
     }
 
     const setImages = () => {
@@ -78,14 +64,14 @@ export function Projects2({ theme }) {
         return (
             <div className={`p-evidence ${theme}`}>
                 {array.map((current, index) => (
-                    <img src={`project/${project[0]+current}.png`}></img>
+                    <img src={`project/${project[0] + current}.png`}></img>
                 ))}
             </div>
         )
     }
 
     return (
-        <div className={`p-container ${theme}`}>
+        <div className={`p-container`}>
             <section className='p-list'>
                 <h1>Proyectos</h1>
                 <article className={`p-list-item ${theme} ${selected[0] ? 'current' : ''}`} onClick={() => changeImage(1)}>

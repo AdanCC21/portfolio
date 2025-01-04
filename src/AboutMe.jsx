@@ -3,7 +3,7 @@ import './css/about.css'
 export function AboutMe({ theme }) {
 
     return (
-        <div className={`about-container ${theme}`}>
+        <div className={`about-container`}>
             <section className='about-c2'>
                 <section className='ab-info'>
                     <header>

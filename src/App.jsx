@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TopBar } from "./components/TopBar";
 import { Theme } from "./components/Theme";
 import { Home } from "./Home";
@@ -16,6 +16,10 @@ export function App({}){
     }else{
         theme = 'dark';
     }
+
+    useEffect(()=>{
+        document.body.className = whiteMode ? 'white-mode':'dark-mode';
+    })
 
     const page = ()=>{
         switch (currentPage){
