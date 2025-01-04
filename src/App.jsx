@@ -3,7 +3,7 @@ import { TopBar } from "./components/TopBar";
 import { Theme } from "./components/Theme";
 import { Home } from "./Home";
 import { Projects } from "./Projects";
-import { Editor } from "./Editor";
+import { Projects2 } from "./Projects2";
 import { AboutMe } from "./AboutMe";
 
 let theme = 'dark';
@@ -22,7 +22,7 @@ export function App({}){
             case 0:
                 return <Home theme={theme}/>
             case 1:
-                return <Projects theme={theme}/>
+                return <Projects2 theme={theme}/>
             case 2:
                 return <AboutMe theme={theme}/>
             default:
