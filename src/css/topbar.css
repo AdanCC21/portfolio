@@ -1,5 +1,5 @@
 .top-bar{
-    position: absolute;
+    position: fixed;
     display: flex;
     
     width: 100vw;
@@ -12,6 +12,19 @@
     font-weight: 600;
     color: #838383;
     z-index: 2;
+    
+}
+
+.top-bar.white{
+    animation: bar-white linear both;
+    animation-timeline: scroll();
+    animation-range: 10vh 30vh;
+}
+
+.top-bar.dark{
+    animation: bar-dark linear both;
+    animation-timeline: scroll();
+    animation-range: 10vh 30vh;
 }
 
 
@@ -44,4 +57,18 @@
 
 .top-bar a:hover{
     color: #4e4e4e;
+}
+
+@keyframes bar-dark{
+    
+    100%{
+        background-color: #1f1f1f;
+    }
+}
+
+@keyframes bar-white{
+    
+    100%{
+        background-color: #F1F1F1;
+    }
 }
