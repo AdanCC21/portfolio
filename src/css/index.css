@@ -9,16 +9,15 @@ body {
 
 .dark-mode {
   background: radial-gradient(circle, #1d1d1d, #0c0c0c);
-  /* background-color: #1A1A1A; */
   color: white;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.2s;
   
 }
 
 .white-mode {
   background-color: #ffffff;
   color: black;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.2s;
 }
 
 html {
@@ -83,12 +82,12 @@ p {
 
 .line.white {
   background-color: black;
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 .line.dark {
   background-color: white;
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 /* ------------------------------------------------ */
@@ -102,12 +101,12 @@ p {
 
 .line-70.white {
   background-color: black;
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 .line-70.dark {
   background-color: white;
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 /* ------------------------------------------------ */
@@ -121,12 +120,12 @@ p {
 
 .vertical-line.dark {
   background-color: white;
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 .vertical-line.white {
   background-color: black;
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 /* ------------------------------------------------ */

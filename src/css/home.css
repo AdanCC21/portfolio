@@ -9,7 +9,7 @@
     align-items: center;
     
     animation: show 0.3s ease-in-out both;
-    transition: background-color ease-in-out 0.2s;
+    /* transition: background-color ease-in-out 0.2s; */
 }
 
 .home.white{
@@ -67,11 +67,11 @@
 
 .home.dark strong{
     color: yellow;
-    transition: color ease-in-out 0.5s;
+    transition: color ease-in-out 0.2s;
 }
 .home.white strong{
     color: rgb(77, 160, 255);
-    transition: color ease-in-out 0.5s;
+    transition: color ease-in-out 0.2s;
 }
 
 /* ----------- Social ----------- */
@@ -179,11 +179,11 @@
 
 .rol.white{
     background-color: #F4F4F4;
-    transition: background-color ease-in-out 0.5s;
+    transition: background-color ease-in-out 0.1s;
 }
 .rol.dark{
     background-color: #1d1d1d;
-    transition: background-color ease-in-out 0.5s;
+    transition: background-color ease-in-out 0.1s;
 }
 
 @media (max-width:450px){
@@ -305,12 +305,12 @@
 
 .one-item.dark{
     background-color: #1d1d1d;
-    transition: background-color ease-in-out 0.5s ,filter ease-in-out 0.5s;
+    transition: background-color ease-in-out 0.1s ,filter ease-in-out 0.1s;
 }
 
 .one-item.white{
     background-color: #f4f4f4;
-    transition: background-color ease-in-out 0.5s ,filter ease-in-out 0.5s;
+    transition: background-color ease-in-out 0.1s ,filter ease-in-out 0.1s;
 }
 /* Pc */
 @media (min-width:1024px){
