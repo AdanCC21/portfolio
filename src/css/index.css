@@ -8,9 +8,11 @@ body {
 }
 
 .dark-mode {
-  background-color: #1d1d1d;
+  background: radial-gradient(circle, #1d1d1d, #0c0c0c);
+  /* background-color: #1A1A1A; */
   color: white;
   transition: all ease-in-out 0.5s;
+  
 }
 
 .white-mode {

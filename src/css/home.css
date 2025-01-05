@@ -16,6 +16,10 @@
     background-color: #F4F4F4;
 }
 
+/* .home.dark{
+    background-color: #1d1d1d41;
+} */
+
 .arrow{
     position: absolute;
     bottom: 5vh;
@@ -29,6 +33,8 @@
     height: 40%;
     border-radius: 50%;
 }
+
+
 
 .mobile-title{
     display: none;

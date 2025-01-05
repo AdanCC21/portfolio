@@ -1,5 +1,5 @@
 import './css/projects.css'
-import { ProjectItem } from '../components/ProjectItem';
+import { ProjectItem } from './components/ProjectItem';
 
 export function Projects({ theme }) {
     return (
