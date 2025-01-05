@@ -25,7 +25,7 @@ export function AboutMe({ theme }) {
                 <a href='https://github.com/AdanCC21' target='blank'>
                     <img src={theme === 'dark' ? `social/dark/github.png` : `social/white/github.png`}></img>
                 </a>
-                <a href='mailto:adangzcs.gemial@gmail.com'>
+                <a href='mailto:adancorp.gemial@gmail.com'>
                     <img src={theme === 'dark' ? `social/dark/gmail.png` : `social/white/gmail.png`}></img>
                 </a>
                 <a href='https://www.linkedin.com/in/adan-gonzalez-cese%C3%B1a-584411338/' target='blank'>
