@@ -15,7 +15,7 @@ export function AboutMe({ theme }) {
 
                         Respecto a la edición, es un hobby que me gusta mucho, para todos mis pedidos me tomo mi tiempo, debido a que la creatividad y sobre todo las ganas o motivación de editar no son algo que se pueda forzar.</p>
                 </section>
-                <img src='informal.jpg' className='ab-image'></img>
+                <img src='ADeath.png' className='ab-image'></img>
             </section>
             
             <section className='social-media'>

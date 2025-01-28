@@ -1,7 +1,9 @@
 import './css/home.css'
+import './css/miniProject.css'
 import { Item } from './components/item';
 import { SoftwareItem } from './components/SoftwareItem';
 import { useRef } from 'react';
+import { ProjectPreview } from './components/ProjectPreview';
 
 export function Home({ theme }) {
 
@@ -38,6 +40,18 @@ export function Home({ theme }) {
 
                 </section>
             </main>
+
+            <section className={`mini-projects ${theme}`}>
+                <h1>Proyectos</h1>
+                {/* <div className={`line ${theme}`}></div> */}
+
+                <section className='mp-items-list'>
+                    <ProjectPreview theme={theme} imageName={"cookingHub2"} projectName={"Cooking Hub"} description={"Una aplicación de cocina para dispositivos móviles cuya función más destacada es la generación de recetas mediante inteligencia artificial."} tools={["dart", "flutter", 'openIa']} />
+                    <ProjectPreview theme={theme} imageName={"petCare1"} projectName={"Pet Care"} description={"Una página web diseñada para el cuidado de mascotas, donde los usuarios pueden llevar un registro detallado de cada una de ellas."} tools={["asp.net", "html", "css"]} />
+                    <ProjectPreview theme={theme} imageName={"wolfForest1"} projectName={"Wolf Forest"} description={"Una página web que presenta un juego por rondas, donde los jugadores que definamos se enfrentan entre sí para alcanzar el podio."} tools={["javascript", "react", "html", "css"]} />
+                </section>
+
+            </section>
 
             <section
                 ref={target}
@@ -85,17 +99,18 @@ export function Home({ theme }) {
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${theme}`}></div>
-                    <h1>Frameworks</h1>
+                    <h1>Frameworks / Librerias</h1>
                 </header>
 
                 <section className='items'>
                     <Item tag={"Flutter"} theme={theme}>flutter</Item>
                     <Item tag={"React"} theme={theme}>react</Item>
+                    <Item tag={"Raylib"} theme={theme}>raylib</Item>
                 </section>
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${theme}`}></div>
-                    <h1>Softwares</h1>
+                    <h1>Softwares / Herramientas</h1>
                 </header>
 
                 <section className='items'>
@@ -115,7 +130,6 @@ export function Home({ theme }) {
                 </header>
 
                 <section className='items'>
-                    <Item tag={"Raylib"} theme={theme}>raylib</Item>
                     <Item tag={"Html"} theme={theme}>html</Item>
                     <Item tag={"Css"} theme={theme}>css</Item>
                 </section>
