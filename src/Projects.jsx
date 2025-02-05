@@ -118,7 +118,7 @@ export function Projects({ theme, current = cookingHub }) {
         <div className={`p-container dark-mode`}>
             
             <img className='go-back' src={`icon/${whiteOrDark()}/arrowDown.png`} onClick={()=>{
-                navigate('/');
+                navigate('/portfolio');
             }}></img>
 
             <section className='p-list'>
