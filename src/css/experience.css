@@ -1,0 +1,70 @@
+.exp-father {
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+    
+    margin: 0 25vw 10vh 25vw;
+}
+
+.exp-father :first-child{
+    display: flex;
+    align-items: center;
+}
+
+.exp-father :first-child div{
+    margin-right: 10px;
+}
+
+.exp-item {
+    display: flex;
+    width: 100%;
+    min-height: 5vh;
+    justify-content: space-between;
+}
+
+.exp-item strong{
+    font-size: 1.2rem;
+}
+
+.exp-item img{
+    width: 5%;
+    margin: auto 15px;
+    aspect-ratio: 1/1;
+}
+
+.exp-line {
+    width: 6px;
+    height: auto;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    margin-left: 4px;
+}
+
+.exp-line.first::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    
+    background-color: white;
+    position: absolute;
+    
+    rotate: 45deg;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.exp-line::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

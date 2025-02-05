@@ -135,6 +135,8 @@ export function Home({ theme }) {
                 </section>
             </section>
 
+            
+
             <footer className={`footer ${theme}`}>
                 <section>
                     <h4>© 2024 Adan Gonzalez Ceseña <br /><br />Correo de contacto adancorp.gemial@gmail.com</h4>

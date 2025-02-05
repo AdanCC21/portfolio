@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './css/projects2.css'
+import { useNavigate } from 'react-router-dom';
 
 const cookingHub = ['cookingHub', 'Cooking Hub',
     'Una aplicación de cocina para dispositivos móviles cuya función más destacada es la generación de recetas mediante inteligencia artificial. Al proporcionar una lista de ingredientes, recibirás una receta personalizada que utiliza esos mismos ingredientes. Además, incluye otras funcionalidades, como guardar recetas, acceder a tutoriales de cocina, marcar ingredientes favoritos y más.',
@@ -17,30 +18,58 @@ const wolf = ['wolfForest', 'Wolf Forest',
     'Una página web que presenta un juego por rondas, donde los jugadores que definamos se enfrentan entre sí para alcanzar el podio. Cada movimiento es crucial, y la fuerza, la inteligencia y la suerte desempeñan un papel fundamental en cada ronda. Durante el día, los jugadores recolectan recursos y se preparan, durante la noche, se refugian en sus bases y se defienden de otros participantes para sobrevivir.',
     ['react', 'html', 'css'], 1]
 
-export function Projects({ theme }) {
+
+export function Projects({ theme, current = cookingHub }) {
 
     let [spawn, setSpawn] = useState('');
     let [project, setProject] = useState(cookingHub);
-    let [selected, setSel] = useState([true, false, false,false]);
+    let [selected, setSel] = useState([false, false, false, false]);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        switch (current) {
+            case 'cookingHub':
+                setSel([true, false, false, false])
+                setProject(cookingHub);
+                break;
+            case 'pooyecto':
+                setSel([false, true, false, false])
+                setProject(pooyecto);
+                break;
+            case 'wolfForest':
+                setSel([false, false, false, true])
+                setProject(wolf);
+                break;
+            case 'petCare':
+                setSel([false, false, true, false])
+                setProject(petCare);
+                break;
+            default:
+                setSel([true, false, false, false])
+                setProject(cookingHub);
+                break;
+        }
+    }, [])
 
     const changeImage = (index) => {
         setSpawn('')
         setTimeout(() => {
             switch (index) {
                 case 1:
-                    setSel([true, false, false,false])
+                    setSel([true, false, false, false])
                     setProject(cookingHub);
                     break;
                 case 2:
-                    setSel([false, true, false,false])
+                    setSel([false, true, false, false])
                     setProject(pooyecto);
                     break;
                 case 3:
-                    setSel([false, false, true,false])
+                    setSel([false, false, true, false])
                     setProject(petCare);
                     break;
                 case 4:
-                    setSel([false, false, false,true])
+                    setSel([false, false, false, true])
                     setProject(wolf);
                     break;
                 default:
@@ -70,7 +99,7 @@ export function Projects({ theme }) {
             array.push(i);
         }
         return (
-            <div className={`p-evidence ${theme}`}>
+            <div className={`p-evidence ${whiteOrDark()}`}>
                 {array.map((current, index) => (
                     <img src={`project/${project[0] + current}.png`}></img>
                 ))}
@@ -78,30 +107,42 @@ export function Projects({ theme }) {
         )
     }
 
+    function whiteOrDark() {
+        if (theme) {
+            return 'white'
+        }
+        return 'dark'
+    }
+
     return (
-        <div className={`p-container`}>
+        <div className={`p-container dark-mode`}>
+            
+            <img className='go-back' src={`icon/${whiteOrDark()}/arrowDown.png`} onClick={()=>{
+                navigate('/');
+            }}></img>
+
             <section className='p-list'>
                 <h1>Proyectos</h1>
-                <article className={`p-list-item ${theme} ${selected[0] ? 'current' : ''}`} onClick={() => changeImage(1)}>
-                    <div className={`vertical-line ${theme}`}></div>Cooking Hub
+                <article className={`p-list-item ${whiteOrDark()} ${selected[0] ? 'current' : ''}`} onClick={() => changeImage(1)}>
+                    <div className={`vertical-line ${whiteOrDark()}`}></div>Cooking Hub
                 </article>
-                <article className={`p-list-item ${theme} ${selected[3] ? 'current' : ''}`} onClick={() => changeImage(4)}>
-                    <div className={`vertical-line ${theme}`}></div>
+                <article className={`p-list-item ${whiteOrDark()} ${selected[3] ? 'current' : ''}`} onClick={() => changeImage(4)}>
+                    <div className={`vertical-line ${whiteOrDark()}`}></div>
                     Wolf Forest
                 </article>
-                <article className={`p-list-item ${theme} ${selected[1] ? 'current' : ''}`} onClick={() => changeImage(2)}>
-                    <div className={`vertical-line ${theme}`}></div>
+                <article className={`p-list-item ${whiteOrDark()} ${selected[1] ? 'current' : ''}`} onClick={() => changeImage(2)}>
+                    <div className={`vertical-line ${whiteOrDark()}`}></div>
                     Pooyecto
                 </article>
-                <article className={`p-list-item ${theme} ${selected[2] ? 'current' : ''}`} onClick={() => changeImage(3)}>
-                    <div className={`vertical-line ${theme}`}></div>
+                <article className={`p-list-item ${whiteOrDark()} ${selected[2] ? 'current' : ''}`} onClick={() => changeImage(3)}>
+                    <div className={`vertical-line ${whiteOrDark()}`}></div>
                     Pet Care
                 </article>
-                
+
             </section>
             <section className={`p-selected ${spawn}`}>
                 <div className='p-title'>
-                    <div className={`vertical-line ${theme}`}></div>
+                    <div className={`vertical-line ${whiteOrDark()}`}></div>
                     <img src={`project/${project[0]}.png`} />
                     <h1>{project[1]}</h1>
                     {setImages()}
