@@ -7,9 +7,7 @@
     
     justify-content: center;
     align-items: center;
-    
-    animation: show 0.3s ease-in-out both;
-    /* transition: background-color ease-in-out 0.2s; */
+    animation: show 0.35s ease-out both;
 }
 
 .home.white{
@@ -33,6 +31,7 @@
     height: 40%;
     border-radius: 50%;
 }
+
 
 
 
@@ -119,126 +118,7 @@
 }
 
 
-/* ----------- EXPERIENCIA ----------- */
 
-.roles{
-    display: flex;
-    flex-direction: column;
-    
-    width: 100vw;
-    height: auto;
-
-    align-items: center;
-}
-
-
-
-@media(max-width:450px){
-    .roles h1{
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
-}
-
-.roles-item{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    margin: 5vh 0;
-}
-
-.roles-item.left{
-    flex-direction: row-reverse;
-}
-
-.roles-item.left p{
-    margin: auto 0 auto 2%;
-}
-
-.roles-item p{
-    margin: auto 2% auto 0;
-}
-
-.rol{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-
-    min-width: 30%;
-    
-    background-color: #F4F4F4;
-    box-sizing: border-box;
-    padding: 2% 0;
-    
-    border-radius: 8px;
-    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
-    
-}
-
-.rol.white{
-    background-color: #F4F4F4;
-    transition: background-color ease-in-out 0.1s;
-}
-.rol.dark{
-    background-color: #1d1d1d;
-    transition: background-color ease-in-out 0.1s;
-}
-
-@media (max-width:450px){
-    .roles-item{
-        flex-direction: column-reverse;
-        width: 80%;
-    }
-
-    .roles-item.left{
-        flex-direction: column-reverse;
-    }
-
-    .roles-item.left p{
-        margin: 0 10%;
-    }
-
-    .roles p{
-        font-size: 1.5rem;
-        margin: 0 10%;
-    }
-
-    .rol {
-        margin: auto;
-        flex-direction: column-reverse;
-        margin-bottom: 4vh;
-        width: 80%;
-        
-    }
-    .rol h1{
-        margin: 0;
-    }
-
-    .rol img{
-        margin: 20px 0;
-    }
-}
-
-@media (max-width:1023px){
-    .roles-item {
-        width: 70%;
-    }
-
-    .rol h1{
-        font-size: 1rem;
-    }
-}
-
-.rol h1{
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.roles-item div img{
-    height: 12vh;
-}
 
 /* ----------- TOOLS ----------- */
 .tools{
@@ -442,7 +322,10 @@
 @keyframes show{
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(-100px);
+    }
+    80%{
+        transform: translateY(5px);
     }
     100%{
         opacity: 1;

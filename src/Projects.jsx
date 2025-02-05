@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './css/projects2.css'
+import './css/projects.css'
 import { useNavigate } from 'react-router-dom';
 
 const cookingHub = ['cookingHub', 'Cooking Hub',

@@ -1,13 +1,12 @@
 import './css/home.css'
-import './css/miniProject.css'
 import './css/experience.css'
 import './css/moreAboutMe.css'
 
-import { Item } from './components/item';
+import { Item } from './components/Item';
 import { SoftwareItem } from './components/SoftwareItem';
 import { useRef } from 'react';
 import { PrevProject } from './components/PrevProject';
-import { ExperienceItem } from './components/experienceItem';
+import { ExperienceItem } from './components/ExperienceItem';
 
 export function NewHome({ theme, setTheme, setProject }) {
     const target = useRef(null);
@@ -56,10 +55,10 @@ export function NewHome({ theme, setTheme, setProject }) {
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
                     <h1>Proyectos</h1>
                 </section>
-                <PrevProject imageName={'wolfForest'} title={"Wolf Forest"} description={"Una pagina web donde puedes jugar a un juego similar a los juegos del hambre."} goTo={setProject} />
-                <PrevProject imageName={'cookingHub'} title={"Cooking Hub"} description={"Una aplicacion movil que te genera recetas mediante la ia de Open IA."} goTo={setProject} />
-                <PrevProject imageName={'petCare'} title={"Pet Care"} description={"Una pagina web dedicada al cuidado de mascotas."} goTo={setProject} />
-                <PrevProject imageName={'pooyecto'} title={"Pooyecto"} description={"Un juego de serpientes y escaleras para programa de escritorio."} goTo={setProject} />
+                <PrevProject imageName={'wolfForest'} title={"Wolf Forest"} description={"Una página web donde puedes jugar a un juego similar a los juegos del hambre."} goTo={setProject} />
+                <PrevProject imageName={'cookingHub'} title={"Cooking Hub"} description={"Una aplicación móvil que te genera recetas mediante la IA de Open IA."} goTo={setProject} />
+                <PrevProject imageName={'petCare'} title={"Pet Care"} description={"Una página web dedicada al cuidado de las mascotas, apoyando al dueño con un registro diario.."} goTo={setProject} />
+                <PrevProject imageName={'pooyecto'} title={"Pooyecto"} description={"El juego de las serpientes y esclareas, en una aplicación de escritorio."} goTo={setProject} />
             </section>
 
             <section className='exp-father'>
