@@ -1,6 +1,6 @@
 import './css/home.css'
 import './css/miniProject.css'
-import { Item } from './components/item';
+import { Item } from './components/Item';
 import { SoftwareItem } from './components/SoftwareItem';
 import { useRef } from 'react';
 import { ProjectPreview } from './components/ProjectPreview';
