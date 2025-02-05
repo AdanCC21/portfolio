@@ -13,8 +13,8 @@ export function App({}){
     return(
         <Router>
             <Routes>
-                <Route path="/" element={<NewHome theme={theme} setTheme={setTheme} setProject={setProject}/>}/>
-                <Route path="/projects" element={<Projects theme={theme} setTheme={setTheme} current={project}/>}/>
+                <Route path="/portfolio" element={<NewHome theme={theme} setTheme={setTheme} setProject={setProject}/>}/>
+                <Route path="/portfolio/projects" element={<Projects theme={theme} setTheme={setTheme} current={project}/>}/>
             </Routes>
         </Router>
     )
