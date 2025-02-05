@@ -97,6 +97,7 @@ export function NewHome({ theme, setTheme, setProject }) {
                 <section className='items'>
                     <Item tag={"Flutter"} theme={whiteOrDark()}>flutter</Item>
                     <Item tag={"React"} theme={whiteOrDark()}>react</Item>
+                    <Item tag={"Tailwind"} theme={whiteOrDark()}>tailwind</Item>
                     <Item tag={"Raylib"} theme={whiteOrDark()}>raylib</Item>
                 </section>
 
@@ -109,6 +110,7 @@ export function NewHome({ theme, setTheme, setProject }) {
                     <SoftwareItem tag={"Git"} theme={whiteOrDark()}>git</SoftwareItem>
                     <SoftwareItem tag={"GitHub"} theme={whiteOrDark()}>github</SoftwareItem>
                     <SoftwareItem tag={"IntelliJ"} theme={whiteOrDark()}>intellij</SoftwareItem>
+                    <SoftwareItem tag={"Android Studio"} theme={whiteOrDark()}>androidStudio</SoftwareItem>
                     <SoftwareItem tag={"Vs Code"} theme={whiteOrDark()}>visualStudioCode</SoftwareItem>
                     <SoftwareItem tag={"VS"} theme={whiteOrDark()}>visualStudio</SoftwareItem>
                     <SoftwareItem tag={"Premiere"} theme={whiteOrDark()}>premiere</SoftwareItem>
