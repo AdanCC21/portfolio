@@ -1,16 +1,22 @@
 .pp-father{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     width: 50vw;
     margin: 10vh 25vw;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1vw;
+    width: 50vw;
+    margin: 10vh 25vw;
+    
 }
 
 .pp-father :first-child{
     display: flex;
+    grid-column: 1/-1;
     align-items: center;
-    width: 100%;
 }
 
 .pp-father :first-child h1{
@@ -25,11 +31,12 @@
 .pp-container{
     position: relative;
     display: flex;
+    text-align: center;
     
     justify-content: center;
     align-items: center;
     
-    width: 32%;
+    /* width: 32%; */
     height: 18vh;
     margin: 10px 0;
 
@@ -51,10 +58,12 @@
 .pp-container p{
     display: none;
     margin: 0 20px;
+    font-size: 0.8em;
     z-index: 2;
 }
 
 .pp-container h1{
+    font-size: 1.5em;
     z-index: 2;
 }
 

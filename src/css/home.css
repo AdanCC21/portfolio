@@ -166,6 +166,7 @@
 }
 
 .one-item{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,6 +198,29 @@
     background-color: #f4f4f4;
     transition: background-color ease-in-out 0.1s ,filter ease-in-out 0.1s;
 }
+
+.one-item h1{
+    opacity: 0;
+    display: none;
+    transition: all ease-in-out 0.4s;
+}
+
+.one-item:hover img{
+    opacity: 0.2;
+}
+
+.one-item:hover h1{
+    position: absolute;
+    display: block;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+
 
 
 

@@ -81,12 +81,12 @@ export function NewHome({ theme, setTheme, setProject }) {
                 </header>
 
                 <section className='items'>
-                    <Item tag={"C"} theme={whiteOrDark()}>c</Item>
-                    <Item tag={"C++"} theme={whiteOrDark()}>cpp</Item>
-                    <Item tag={"Dart"} theme={whiteOrDark()}>dart</Item>
-                    <Item tag={"Python"} theme={whiteOrDark()}>python</Item>
-                    <Item tag={"Java"} theme={whiteOrDark()}>java</Item>
-                    <Item tag={"JavaScript"} theme={whiteOrDark()}>javascript</Item>
+                    <Item tag={"C"} level={"Alto"} theme={whiteOrDark()}>c</Item>
+                    <Item tag={"C++"} level={"Alto"} theme={whiteOrDark()}>cpp</Item>
+                    <Item tag={"Dart"} level={"Medio"} theme={whiteOrDark()}>dart</Item>
+                    <Item tag={"Python"} level={"Medio"} theme={whiteOrDark()}>python</Item>
+                    <Item tag={"Java"} level={"Medio"} theme={whiteOrDark()}>java</Item>
+                    <Item tag={"JavaScript"} level={"Alto"} theme={whiteOrDark()}>javascript</Item>
                 </section>
 
                 <header className='tools-head'>
@@ -95,10 +95,10 @@ export function NewHome({ theme, setTheme, setProject }) {
                 </header>
 
                 <section className='items'>
-                    <Item tag={"Flutter"} theme={whiteOrDark()}>flutter</Item>
-                    <Item tag={"React"} theme={whiteOrDark()}>react</Item>
-                    <Item tag={"Tailwind"} theme={whiteOrDark()}>tailwind</Item>
-                    <Item tag={"Raylib"} theme={whiteOrDark()}>raylib</Item>
+                    <Item tag={"Flutter"} level={"Medio"} theme={whiteOrDark()}>flutter</Item>
+                    <Item tag={"React"} level={"Medio"} theme={whiteOrDark()}>react</Item>
+                    <Item tag={"Tailwind"} level={"Medio"} theme={whiteOrDark()}>tailwind</Item>
+                    <Item tag={"Raylib"} level={"Medio"} theme={whiteOrDark()}>raylib</Item>
                 </section>
 
                 <header className='tools-head'>
@@ -107,15 +107,15 @@ export function NewHome({ theme, setTheme, setProject }) {
                 </header>
 
                 <section className='items'>
-                    <SoftwareItem tag={"Git"} theme={whiteOrDark()}>git</SoftwareItem>
-                    <SoftwareItem tag={"GitHub"} theme={whiteOrDark()}>github</SoftwareItem>
-                    <SoftwareItem tag={"IntelliJ"} theme={whiteOrDark()}>intellij</SoftwareItem>
-                    <SoftwareItem tag={"Android Studio"} theme={whiteOrDark()}>androidStudio</SoftwareItem>
-                    <SoftwareItem tag={"Vs Code"} theme={whiteOrDark()}>visualStudioCode</SoftwareItem>
-                    <SoftwareItem tag={"VS"} theme={whiteOrDark()}>visualStudio</SoftwareItem>
-                    <SoftwareItem tag={"Premiere"} theme={whiteOrDark()}>premiere</SoftwareItem>
-                    <SoftwareItem tag={"Photoshop"} theme={whiteOrDark()}>photoshop</SoftwareItem>
-                    <SoftwareItem tag={"Figma"} theme={whiteOrDark()}>figma</SoftwareItem>
+                    <SoftwareItem level={"Alto"} tag={"Git"} theme={whiteOrDark()}>git</SoftwareItem>
+                    <SoftwareItem level={"Alto"} tag={"GitHub"} theme={whiteOrDark()}>github</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"IntelliJ"} theme={whiteOrDark()}>intellij</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"Android Studio"} theme={whiteOrDark()}>androidStudio</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"Vs Code"} theme={whiteOrDark()}>visualStudioCode</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"VS"} theme={whiteOrDark()}>visualStudio</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"Premiere"} theme={whiteOrDark()}>premiere</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"Photoshop"} theme={whiteOrDark()}>photoshop</SoftwareItem>
+                    <SoftwareItem level={"Medio"} tag={"Figma"} theme={whiteOrDark()}>figma</SoftwareItem>
                 </section>
 
                 <header className='tools-head'>
@@ -124,13 +124,13 @@ export function NewHome({ theme, setTheme, setProject }) {
                 </header>
 
                 <section className='items'>
-                    <Item tag={"Html"} theme={whiteOrDark()}>html</Item>
-                    <Item tag={"Css"} theme={whiteOrDark()}>css</Item>
+                    <Item tag={"Html"} level={"Alto"} theme={whiteOrDark()}>html</Item>
+                    <Item tag={"Css"} level={"Alto"} theme={whiteOrDark()}>css</Item>
                 </section>
             </section>
 
             <section className='ma-father'>
-                <img className='ma-profile' src="io-lentes.png" />
+                <img className='ma-profile' src="Draw.png" />
                 <h1>+ Sobre mi</h1>
                 <section className='social-media-home  '>
                     <a href='https://www.instagram.com/adan_gcm' target='blank'>
