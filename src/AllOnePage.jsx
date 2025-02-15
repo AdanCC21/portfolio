@@ -134,16 +134,16 @@ export function NewHome({ theme, setTheme, setProject }) {
                 <h1>+ Sobre mi</h1>
                 <section className='social-media-home  '>
                     <a href='https://www.instagram.com/adan_gcm' target='blank'>
-                        <img src={theme ? `social/white/instagram.png` : `social/dark/instagram.png`}></img>
+                        <img alt='instagram' src={theme ? `social/white/instagram.png` : `social/dark/instagram.png`}></img>
                     </a>
                     <a href='https://github.com/AdanCC21' target='blank'>
-                        <img src={theme ? `social/white/github.png` : `social/dark/github.png`}></img>
+                        <img alt='github' src={theme ? `social/white/github.png` : `social/dark/github.png`}></img>
                     </a>
                     <a href='mailto:adancorp.gemial@gmail.com'>
-                        <img src={theme ? `social/white/gmail.png` : `social/dark/gmail.png`}></img>
+                        <img alt='gmail' src={theme ? `social/white/gmail.png` : `social/dark/gmail.png`}></img>
                     </a>
                     <a href='https://www.linkedin.com/in/adan-gonzalez-cese%C3%B1a-584411338/' target='blank'>
-                        <img src={theme ? `social/white/linkedin.png` : `social/dark/linkedin.png`}></img>
+                        <img alt='linkedin' src={theme ? `social/white/linkedin.png` : `social/dark/linkedin.png`}></img>
                     </a>
 
                 </section>
