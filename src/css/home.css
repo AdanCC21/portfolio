@@ -32,9 +32,6 @@
     border-radius: 50%;
 }
 
-
-
-
 .mobile-title{
     display: none;
 }
@@ -133,7 +130,7 @@
 }
 
 
-.tools h1{
+.tools h2{
     margin: 0 2%;
 }
 
@@ -184,8 +181,8 @@
     max-width: 80%;
 }
 
-.one-item h3{
-    margin: 10px 0 0 0;
+.one-item span{
+    
     text-align: center;
 }
 

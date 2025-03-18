@@ -30,8 +30,8 @@ export function NewHome({ theme, setTheme, setProject }) {
                 <div className={`line ${whiteOrDark()} `}></div>
 
                 <h1 className='mobile-title'><strong>Adan Gonzalez</strong></h1>
-                <h1 className='pc-title'>Hola, soy <strong>Adan Gonzalez</strong></h1>
-                <h3 >Ingeniero en Software y Editor de Videos</h3>
+                <h1 className='pc-title font-medium'>Hola, soy <strong>Adan Gonzalez</strong></h1>
+                <p >Ingeniero en Software y Editor de Videos</p>
                 <img alt='go down' onClick={goDown} src={`icon/${whiteOrDark()}/arrowDown.png`} className='arrow' />
                 <section className='social-media-home  '>
                     <a href='https://www.instagram.com/adan_gcm' target='blank'>
@@ -53,7 +53,7 @@ export function NewHome({ theme, setTheme, setProject }) {
             <section ref={target} className='pp-father'>
                 <section>
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
-                    <h1>Proyectos</h1>
+                    <h2>Proyectos</h2>
                 </section>
                 <PrevProject imageName={'wolfForest'} title={"Wolf Forest"} description={"Una página web donde puedes jugar a un juego similar a los juegos del hambre."} goTo={setProject} />
                 <PrevProject imageName={'cookingHub'} title={"Cooking Hub"} description={"Una aplicación móvil que te genera recetas mediante la IA de Open IA."} goTo={setProject} />
@@ -64,7 +64,7 @@ export function NewHome({ theme, setTheme, setProject }) {
             <section className='exp-father'>
                 <section>
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
-                    <h1>Experiencia</h1>
+                    <h2>Experiencia</h2>
                 </section>
                 <ExperienceItem first={true} imageName={"page"} strong={"Frontend"} description={"El mejor rol en el que me desempeño, ya que en el 80% de los proyectos que he realizado dentro de la universidad, mi principal responsabilidad ha sido diseñar el Frontend de los mismos."} />
 
@@ -77,7 +77,7 @@ export function NewHome({ theme, setTheme, setProject }) {
             <section className={`tools ${whiteOrDark()}`}>
                 <header className='tools-head'>
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
-                    <h1>Lenguajes</h1>
+                    <h2 className=''>Lenguajes</h2>
                 </header>
 
                 <section className='items'>
@@ -91,7 +91,7 @@ export function NewHome({ theme, setTheme, setProject }) {
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
-                    <h1>Frameworks / Librerias</h1>
+                    <h2>Frameworks / Librerias</h2>
                 </header>
 
                 <section className='items'>
@@ -103,7 +103,7 @@ export function NewHome({ theme, setTheme, setProject }) {
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
-                    <h1>Softwares / Herramientas</h1>
+                    <h2>Softwares / Herramientas</h2>
                 </header>
 
                 <section className='items'>
@@ -120,7 +120,7 @@ export function NewHome({ theme, setTheme, setProject }) {
 
                 <header className='tools-head'>
                     <div className={`vertical-line ${whiteOrDark()}`}></div>
-                    <h1>Otros</h1>
+                    <h2>Otros</h2>
                 </header>
 
                 <section className='items'>
@@ -131,7 +131,7 @@ export function NewHome({ theme, setTheme, setProject }) {
 
             <section className='ma-father'>
                 <img className='ma-profile' alt='Draw' src="Draw.png" />
-                <h1>+ Sobre mi</h1>
+                <h2 className='font-semibold'>+ Sobre mi</h2>
                 <section className='social-media-home  '>
                     <a href='https://www.instagram.com/adan_gcm' target='blank'>
                         <img alt='instagram' src={theme ? `social/white/instagram.png` : `social/dark/instagram.png`}></img>
@@ -147,22 +147,21 @@ export function NewHome({ theme, setTheme, setProject }) {
                     </a>
 
                 </section>
-                <p>
-                    Soy un estudiante universitario de la Universidad Autónoma de Baja California, estoy estudiando la carrera de ingeniería en Software y Tecnologías Emergentes, planeo graduarme en 2026 y pienso enfocarme en campos como Fronted, Backend, desarrollo de aplicaciones móviles y la creación de Software.
-                </p>
-                <p>
-                    Respecto a la edición, es un hobby que me gusta mucho, para todos mis pedidos me tomo mi tiempo, debido a que la creatividad y las ganas o motivación de editar no son algo que se pueda forzar.
+                <p >
+                    Soy un estudiante de la <strong>Universidad Autónoma de Baja California</strong>, estoy estudiando la carrera de Ingeniero en Software y Tecnologías Emergentes, planeo graduarme en 2026 y pienso enfocarme en campos como <strong>Fronted, Backend y Aplicaciones móviles.</strong>
+                    <br/>
+                    <br/>
+                    Me considero como un desarrollador <strong>entusiasmado a aprender</strong>, me gusta expandir mis conocimientos con nuevos Lenguajes, Frameworks, Proyectos, etc.
                 </p>
 
             </section>
 
             <footer className={`footer ${whiteOrDark()}`}>
                 <section>
-                    <h4>© 2025 Adan Gonzalez Ceseña <br /><br />Correo de contacto adancorp.gemial@gmail.com</h4>
+                    <span>© 2025 Adan Gonzalez Ceseña <br /><br />Correo de contacto adancorp.gemial@gmail.com</span>
 
-                    <h4>Este sitio fue diseñado con los iconos de la pagina <a href='https://www.flaticon.es'>Flaticon</a> con su respectiva licencia gratis para uso personal o comercial</h4>
+                    <span>Este sitio fue diseñado con los iconos de la pagina <a href='https://www.flaticon.es'>Flaticon</a> con su respectiva licencia gratis para uso personal o comercial</span>
                 </section>
-
             </footer>
         </div>
     )

@@ -33,6 +33,9 @@
   "dependencies": {
   
     
+  "@tailwindcss/vite": "^4.0.14",
+  
+    
   "@tsparticles/all": "^3.8.1",
   
     
@@ -46,6 +49,9 @@
   
     
   "react-tsparticles": "^2.12.2",
+  
+    
+  "tailwindcss": "^4.0.14",
   
     
   "tsparticles": "^3.8.1"
