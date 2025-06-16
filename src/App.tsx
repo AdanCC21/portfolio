@@ -1,6 +1,7 @@
 // import React from 'react'
 import Header from "./components/Header"
 import lineTopDown from './assets/decoration/lineTopDown.svg'
+import Skills from "./pages/Skills"
 
 export default function App() {
   return (
@@ -23,9 +24,7 @@ export default function App() {
         </article>
       </main>
 
-      <section>
-        
-      </section>
+      <Skills />
     </div>
   )
 }
