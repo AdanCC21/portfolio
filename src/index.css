@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+:root {
+  --bg-white: #FDFAFB;
+  font-family: 'Schoolbell', Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 3rem
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+span {
+  font-size: .8rem;
+}
+
+small {
+  font-size: .5rem;
+}
