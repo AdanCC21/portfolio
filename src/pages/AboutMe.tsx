@@ -1,7 +1,8 @@
 export default function AboutMe() {
     return (
-        <div className="flex h-screen justify-between py-[10vh] mx-[10vw]">
-            <div className=" w-2/3">
+        <div className="flex h-screen justify-between py-[10vh] mx-[10vw] relative">
+            <div className=" w-2/3 relative">
+                <img src='draws/Proud.png' className='h-[100px] w-fit absolute top-0 left-[-140px]' />
                 <h1 className="mb-3">More About Me</h1>
                 <p>Soy un estudiante de la <strong>Universidad Autónoma de Baja California</strong>, estoy estudiando la carrera de ingeniería en Software y Tecnologías Emergentes, planeo graduarme en 2026 y pienso enfocarme en campos como <strong>Fronted</strong> y <strong>Backend</strong> de desarrollo de paginas web</p>
                 <br />
@@ -11,6 +12,8 @@ export default function AboutMe() {
                 </section>
             </div>
             <img className="h-1/2 my-auto" src="i.png" alt="Adan" />
+            
+            <img src='draws/Music2.png' className='h-[110px] w-fit absolute bottom-10 right-0' />
         </div>
     )
 }
