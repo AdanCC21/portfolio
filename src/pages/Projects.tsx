@@ -24,8 +24,8 @@ const wolfForest: project = {
     title: "Wolf Forest",
     imageName: "wolfforest",
     date: "10-28-25",
-    description: "Descripcion del proyecto :Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker.",
-    whatIDo: "Mi rol en el proyecto: Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+    description: "Es una pagina web donde puedes colocar a tus personajes fictisios y ponerlos a luchar en una batalla campal. Habra varios dias y noches con eventos especiales como muertes, asesinatos, recoleccion de items, etc.",
+    whatIDo: "Yo lleve a cabo todo este proyecto, fue un proyecto de vacaciones para aprender JavaScript y para ser mi primera pagina web, no esta mal. Estoy pensando en refactorizar este codigo y pasarlo a TypeScript.",
     tools: ['React', 'JavaScript'],
     examplesCount: 3,
     likedLevel: 2
@@ -35,8 +35,8 @@ const actOne: project = {
     title: "Act One",
     imageName: "actone",
     date: "20-01-25",
-    description: "Una descripcion",
-    whatIDo: "Lo que hice",
+    description: "Una red social donde puedes compartir historias y/o chismes, esta pagina surgio de 2 ideas principales, 1ra es que los usuarios puedan compartir sus anectodas en un formato de actos, y la 2da es facilitar a los creadores de contenido con un modo 'concentracion', que este muestra la historia parrafo por parrafo sin distracciones alrededor.",
+    whatIDo: "Yo lleve a cabo todo el proyecto, desde la idea, la planeacion, diseño, backend, frontend y base de datos",
     tools: ['React', 'JavaScript', 'TypeScript', 'tailwindcss', 'NestJS'],
     examplesCount: 3,
     likedLevel: 3
@@ -46,8 +46,8 @@ const cookingHub: project = {
     title: "Cooking Hub",
     imageName: "cookinghub",
     date: "05-12-24",
-    description: "Una descripcion",
-    whatIDo: "Lo que hice",
+    description: "Una aplicación de cocina para dispositivos móviles cuya función más destacada es la generación de recetas mediante inteligencia artificial. Al proporcionar una lista de ingredientes, recibirás una receta personalizada que utiliza esos mismos ingredientes. Además, incluye otras funcionalidades, como guardar recetas, acceder a tutoriales de cocina, marcar ingredientes favoritos y más.",
+    whatIDo: "Fui el encargado del Diseño y Frontend, ademas fui auxiliar en Backend y en la planeacion del proyecto.",
     tools: ['Dart', 'Flutter'],
     examplesCount: 3,
     likedLevel: 1

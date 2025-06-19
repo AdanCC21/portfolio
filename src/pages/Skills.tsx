@@ -7,7 +7,7 @@ export default function Skills() {
             <img src='draws/React.png' className='h-[200px] w-fit absolute top-30 left-[-100px] opacity-30' />
             <section className='mx-[10vw] py-[5vh] h-full relative'>
                 <h1>Skills</h1>
-                <p className='mb-5'>Around my 3 years on the university, and by my self, i learn to use this languages, frameworks, libraries etc. </p>
+                <p className='mb-5'>Around my 3 years on the university, and by my self, i learn this languages, frameworks, libraries etc. </p>
                 <section className='grid grid-cols-[repeat(auto-fit,_minmax(50px,_100px))] gap-10'>
                     <LanguageItem key={`s-js`} imageSource='./icons/languages/javascript.svg' title='JavaScript' />
                     <LanguageItem key={`s-ts`} imageSource='./icons/languages/typescript.svg' title='TypeScript' />
