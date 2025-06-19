@@ -2,17 +2,25 @@ export default function AboutMe() {
     return (
         <div className="flex h-screen justify-between py-[10vh] mx-[10vw] relative">
             <div className=" w-2/3 relative">
-                <img src='draws/Proud.png' className='h-[100px] w-fit absolute top-0 left-[-140px]' />
+                <img src='draws/Proud.png' className='h-[100px] w-fit absolute top-0 right-[-140px]' />
                 <h1 className="mb-3">More About Me</h1>
-                <p>Soy un estudiante de la <strong>Universidad Autónoma de Baja California</strong>, estoy estudiando la carrera de ingeniería en Software y Tecnologías Emergentes, planeo graduarme en 2026 y pienso enfocarme en campos como <strong>Fronted</strong> y <strong>Backend</strong> de desarrollo de paginas web</p>
+                <p>I am a student at the <strong>Universidad Autónoma de Baja California</strong>, studying a degree in <strong>Ingeniería en Software y Tecnologías Emergentes.</strong> I plan to graduate in 2026 and intend to focus on fields like <strong>Frontend</strong> and <strong>Backend</strong> web development.</p>
                 <br />
-                <p>Respecto a la <strong>edición</strong>, es un hobby que me gusta mucho, para todos mis pedidos me tomo mi tiempo, debido a que la creatividad y la motivación de editar no son algo que se pueda forzar.</p>
-                <section>
-
+                <p>I really enjoy listening to all kinds of music, developing frontend, learning new languages/frameworks related to web development, and coffee :). </p>
+                <br />
+                <p>Regarding <strong>editing</strong>, it’s a hobby I really like. For all my projects, I take my time because creativity and motivation to edit are not things that can be forced. At the moment, I'm taking a break because I want to focus on my career.</p>
+                <br />
+                <p>I'm from Baja California and was born here in 2004.</p>
+                <br />
+                <section className="flex h-[30px] w-fit">
+                    <img className="mr-3" src="icons/social/instagram.png" alt="instagram"/>
+                    <img className="mx-3" src="icons/social/github.png" alt="github"/>
+                    <img className="mx-3" src="icons/social/linkedin.png" alt="linkedin"/>
+                    <img className="ml-3" src="icons/social/gmail.png" alt="gmail"/>
                 </section>
             </div>
             <img className="h-1/2 my-auto" src="i.png" alt="Adan" />
-            
+
             <img src='draws/Music2.png' className='h-[110px] w-fit absolute bottom-10 right-0' />
         </div>
     )
