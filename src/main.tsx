@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path='/portfolio' Component={App} />
-        <Route path='/404' Component={NotFound} />
+        <Route path='/portfolio/404' Component={NotFound} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
