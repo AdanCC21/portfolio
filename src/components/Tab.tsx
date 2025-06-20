@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 type Prompts = {
     title: string,
     imageName: string,
