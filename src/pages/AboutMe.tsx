@@ -26,7 +26,7 @@ export default function AboutMe() {
                     </a>
                 </section>
             </div>
-            <img className="h-1/2 my-auto" src="i.png" alt="Adan" />
+            <img className="h-1/2 my-auto rounded-full" src="informal.png" alt="Adan" />
 
             <img src='draws/Music2.png' className='h-[110px] w-fit absolute bottom-10 right-0' />
         </div>

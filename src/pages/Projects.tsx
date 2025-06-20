@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { easeInOut, motion } from 'framer-motion';
+import { AnimatePresence, easeInOut, motion } from 'framer-motion';
 import Tab from "../components/Tab";
 import LanguageItem from "../components/LanguageItem";
 
@@ -68,6 +68,8 @@ export default function Projects() {
     let [currentProject, setCurrentProject] = useState<project>(actOne);
     let [currentExample, setExample] = useState(1);
     const navigator = useNavigate();
+    const [fullscreenOpen, setFullscreenOpen] = useState(false);
+
 
     const getIndex = () => {
         let items: number[] = [];
@@ -92,6 +94,16 @@ export default function Projects() {
                     );
                 })}
             </div>)
+    }
+
+    const move = (moveToRight: boolean) => {
+        if (moveToRight) {
+            if (currentExample < currentProject.examplesCount) setExample(prev => prev + 1)
+            else setExample(1);
+        } else {
+            if (currentExample > currentProject.examplesCount) setExample(prev => prev - 1)
+            else setExample(currentProject.examplesCount);
+        }
     }
 
     return (
@@ -136,8 +148,23 @@ export default function Projects() {
 
                 <div className="flex flex-col w-1/2 h-full items-center justify-center relative">
                     <div className="flex flex-col items-center justify-center h-full pl-4 ">
-                        <img className="rounded-md max-w-full w-fit h-fit max-h-1/2" src={`examples/${currentProject.imageName.toLowerCase()}/${currentExample}.jpg`} />
+                        <div className="flex h-1/2 w-full">
+                            <button className="mr-2" onClick={() => { move(false) }}>
+                                <h3 className="">{"<"}</h3>
+                            </button>
+                            <img
+                                className="rounded-md max-w-8/10 h-fit max-h-5/6 my-auto mx-auto cursor-pointer"
+                                src={`examples/${currentProject.imageName.toLowerCase()}/${currentExample}.jpg`}
+                                onClick={() => setFullscreenOpen(true)}
+                            />
+
+                            <button className="ml-2" onClick={() => { move(true) }}>
+                                <h3 className="">{">"}</h3>
+                            </button>
+                        </div>
+
                         {getIndex()}
+
                         <div className="flex ml-auto mt-5">
                             {currentProject.repo ? (
                                 <a className="mr-5 cursor-pointer" href={currentProject.repo}>
@@ -156,7 +183,7 @@ export default function Projects() {
                                     <img className="w-fit" src={goTo} alt="decoration" />
                                 </a>
                             ) : (
-                                <div className="cursor-pointer" onClick={()=>{navigator('/404')}}>
+                                <div className="cursor-pointer" onClick={() => { navigator('/404') }}>
                                     <p className="text-[#838383]">Go To {'- >'}</p>
                                 </div>
 
@@ -174,6 +201,39 @@ export default function Projects() {
                 </div>
 
             </motion.section>
+            <AnimatePresence>
+                {fullscreenOpen && (
+                    <motion.div
+                        key="fullscreen-modal"
+                        className="fixed top-0 left-0 w-screen h-screen bg-[rgba(0,0,0,0.8)] bg-opacity-90 flex items-center justify-center z-50"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, ease: easeInOut }}
+                    >
+                        <img src={`examples/${currentProject.imageName.toLowerCase()}/${currentExample}.jpg`}
+                            className="max-w-[90%] max-h-[90%] rounded shadow-lg"
+                            alt="fullscreen" />
+
+                        <button className="absolute top-4 right-6 text-white text-3xl font-bold"
+                            onClick={() => setFullscreenOpen(false)} >
+                            X
+                        </button>
+                        <button className="absolute left-6 text-white text-4xl"
+                            onClick={() => setExample((prev) => prev === 1 ? currentProject.examplesCount : prev - 1)}>
+                            {"<"}
+                        </button>
+                        <button className="absolute right-6 text-white text-4xl"
+                            onClick={() => setExample((prev) => prev === currentProject.examplesCount ? 1 : prev + 1)} >
+                            {">"}
+                        </button>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+
         </div>
+
     )
+
 }
