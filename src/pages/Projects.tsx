@@ -9,6 +9,7 @@ import index3 from '../assets/decoration/index3.svg';
 
 import code from '../assets/decoration/itemShortBottom.svg';
 import goTo from '../assets/decoration/itemMediumBottom.svg';
+import { useNavigate } from "react-router";
 
 interface project {
     title: string,
@@ -18,7 +19,9 @@ interface project {
     whatIDo: string,
     tools: Array<string>,
     examplesCount: number,
-    likedLevel: number
+    likedLevel: number,
+    repo: string,
+    page: string
 }
 
 const wolfForest: project = {
@@ -29,7 +32,9 @@ const wolfForest: project = {
     whatIDo: "I carried out this entire project, developing it during vacations to learn JavaScript.",
     tools: ['React', 'JavaScript'],
     examplesCount: 3,
-    likedLevel: 2
+    likedLevel: 2,
+    repo: "",
+    page: '',
 }
 
 const actOne: project = {
@@ -40,7 +45,9 @@ const actOne: project = {
     whatIDo: "I carried out the entire project, from the idea, planning, design, backend, frontend, and database.",
     tools: ['React', 'JavaScript', 'TypeScript', 'tailwindcss', 'NestJS', 'Prisma'],
     examplesCount: 7,
-    likedLevel: 3
+    likedLevel: 3,
+    repo: '',
+    page: '',
 }
 
 const cookingHub: project = {
@@ -51,13 +58,16 @@ const cookingHub: project = {
     whatIDo: "I was in charge of the design and frontend development, and also assisted with backend and project planning.",
     tools: ['Dart', 'Flutter', 'MongoDB'],
     examplesCount: 6,
-    likedLevel: 1
+    likedLevel: 1,
+    repo: 'https://github.com/diegovq12/CookingHub',
+    page: ''
 }
 
 
 export default function Projects() {
     let [currentProject, setCurrentProject] = useState<project>(actOne);
     let [currentExample, setExample] = useState(1);
+    const navigator = useNavigate();
 
     const getIndex = () => {
         let items: number[] = [];
@@ -129,14 +139,30 @@ export default function Projects() {
                         <img className="rounded-md max-w-full w-fit h-fit max-h-1/2" src={`examples/${currentProject.imageName.toLowerCase()}/${currentExample}.jpg`} />
                         {getIndex()}
                         <div className="flex ml-auto mt-5">
-                            <div className="mr-5 cursor-pointer">
-                                <p>Code</p>
-                                <img className="mx-auto" src={code} alt="decoration" />
-                            </div>
-                            <div className="cursor-pointer">
-                                <p>Go To {'- >'}</p>
-                                <img className="w-fit" src={goTo} alt="decoration" />
-                            </div>
+                            {currentProject.repo ? (
+                                <a className="mr-5 cursor-pointer" href={currentProject.repo}>
+                                    <p>Code</p>
+                                    <img className="mx-auto" src={code} alt="decoration" />
+                                </a>
+                            ) : (
+                                <div className="mr-5 cursor-pointer" onClick={() => { navigator('/404') }}>
+                                    <p className="text-[#838383]">Code</p>
+                                </div>
+                            )}
+
+                            {currentProject.page ? (
+                                <a className="cursor-pointer" href={currentProject.page}>
+                                    <p >Go To {'- >'}</p>
+                                    <img className="w-fit" src={goTo} alt="decoration" />
+                                </a>
+                            ) : (
+                                <div className="cursor-pointer" onClick={()=>{navigator('/404')}}>
+                                    <p className="text-[#838383]">Go To {'- >'}</p>
+                                </div>
+
+                            )}
+
+
                         </div>
                     </div>
                     {currentProject.likedLevel === 1 ? (

@@ -1,3 +1,5 @@
+import { easeInOut, motion } from 'framer-motion'
+
 export default function AboutMe() {
     return (
         <div className="flex h-screen justify-between py-[10vh] mx-[10vw] relative">
@@ -12,11 +14,16 @@ export default function AboutMe() {
                 <br />
                 <p>I'm from Baja California and was born here in 2004.</p>
                 <br />
-                <section className="flex h-[30px] w-fit">
-                    <img className="mr-3" src="icons/social/instagram.png" alt="instagram"/>
-                    <img className="mx-3" src="icons/social/github.png" alt="github"/>
-                    <img className="mx-3" src="icons/social/linkedin.png" alt="linkedin"/>
-                    <img className="ml-3" src="icons/social/gmail.png" alt="gmail"/>
+                <section className="flex h-[35px] w-fit">
+                    <a className="h-full flex" href="https://www.instagram.com/adan_gcm">
+                        <motion.img whileHover={{scale:1.2}} transition={{duration:0.3, ease:easeInOut}} className="mr-3" src="icons/social/instagram.png" alt="instagram" />
+                    </a>
+                    <a className="h-full flex" href="https://github.com/AdanCC21">
+                        <motion.img whileHover={{scale:1.2}} transition={{duration:0.3, ease:easeInOut}} className="mx-3" src="icons/social/github.png" alt="github" />
+                    </a>
+                    <a className="h-full flex" href="https://www.linkedin.com/in/adan-gonzalez-cese%C3%B1a-584411338/">
+                        <motion.img whileHover={{scale:1.2}} transition={{duration:0.3, ease:easeInOut}} className="mx-3" src="icons/social/linkedin.png" alt="linkedin" />
+                    </a>
                 </section>
             </div>
             <img className="h-1/2 my-auto" src="i.png" alt="Adan" />

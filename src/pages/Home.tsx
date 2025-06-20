@@ -3,7 +3,12 @@ import lineBottom from '../assets/decoration/profileDec.svg';
 import goDown from '../assets/decoration/goDown.svg';
 import { easeInOut, motion } from 'framer-motion';
 
-export default function Home() {
+type Prompts = {
+    skillsRef: any,
+    goTo: (ref: any) => void
+}
+
+export default function Home({ skillsRef, goTo }: Prompts) {
     return (
         <main className="flex w-screen h-(--home-height) overflow-hidden">
             <img src='draws/Celular.png' className='h-[80px] w-fit absolute left-5 top-5 scale-x-[-1]' />
@@ -29,7 +34,8 @@ export default function Home() {
                     <p>UABC Student, Frontend, Backend, Video Editor</p>
                     <div className='h-[20px]'>
                         <img src={goDown} alt='go down' className='h-[90%] hover:h-full mx-auto mt-5 cursor-pointer
-                        transition-all ease-in-out duration-300' />
+                        transition-all ease-in-out duration-300'
+                            onClick={() => { goTo(skillsRef) }} />
                     </div>
 
                 </div>
