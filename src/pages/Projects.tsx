@@ -107,7 +107,7 @@ export default function Projects() {
     }
 
     return (
-        <div className="mx-[10vw] h-screen py-[5vh] overflow-hidden">
+        <div className="mx-[10vw] min-h-screen py-[5vh] overflow-hidden">
             <motion.section className="relative"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -115,7 +115,8 @@ export default function Projects() {
                 transition={{ ease: easeInOut, duration: 0.3 }}
             >
                 <h1 className="mb-3">Projects</h1>
-                <img src='draws/Laptop.png' className='h-[180px] -z-1 w-fit absolute top-0 right-0' />
+                <img src='draws/Laptop.png'
+                    className='h-[80px] md:h-[180px] -z-1 w-fit absolute top-0 right-0' />
                 <section className="flex pl-2 h-[50px] border-b-2 border-black">
                     <Tab imageName={actOne.imageName} title={actOne.title} isActive={currentProject === actOne} click={() => { setCurrentProject(actOne); setExample(1) }} />
                     <Tab imageName={wolfForest.imageName} title={wolfForest.title} isActive={currentProject === wolfForest} click={() => { setCurrentProject(wolfForest); setExample(1) }} />
@@ -123,13 +124,13 @@ export default function Projects() {
                 </section>
             </motion.section>
 
-            <motion.section className="flex w-full h-full pb-[10vh]"
+            <motion.section className="flex md:flex-row flex-col w-full h-full pb-[10vh]"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ amount: 0.30, once: true }}
                 transition={{ ease: easeInOut, duration: 0.3 }}
             >
-                <div className="flex flex-col w-2/3 h-full mt-3">
+                <div className="flex flex-col md:w-2/3 h-full mt-3">
                     <div>
                         <h2>{currentProject.title}</h2>
                         <span className="text-[#838383]">{currentProject.date}</span>
@@ -138,7 +139,8 @@ export default function Projects() {
                         <p className="mb-3"><strong>Project description: </strong>{currentProject.description}</p>
                         <p className="mt-3"><strong>My role: </strong>{currentProject.whatIDo}</p>
                     </div>
-                    <div className="grid grid-cols-[repeat(auto-fit,minmax(30px,_70px))] gap-5">
+
+                    <div className="grid justify-center md:justify-start grid-cols-[repeat(auto-fit,minmax(30px,_70px))] gap-5">
                         {currentProject.tools.map((current, index) => {
                             let image = current.toLowerCase();
                             return (<LanguageItem key={`p-${index}`} imageSource={`./icons/languages/${image}.svg`} small={true} title={current} />)
@@ -146,14 +148,24 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-1/2 h-full items-center justify-center relative">
-                    <div className="flex flex-col items-center justify-center h-full pl-4 ">
+                <div className="flex flex-col-reverse md:flex-col md:w-1/2 h-full my-3 md:my-auto items-center justify-center relative">
+                    {currentProject.likedLevel === 1 ? (
+                        <img src='draws/Nojado.png'
+                            className='h-[50px] md:h-[100px] ml-auto -z-1 w-fit' />) :
+                        (<> {currentProject.likedLevel === 2 ?
+                            (<img src='draws/Like.png'
+                                className='h-[50px] md:h-[100px] ml-auto -z-1 w-fit' />)
+                            : (<img src='draws/Cafe.png' className='h-[50px] md:h-[100px] ml-auto -z-1 w-fit' />)}
+                        </>)}
+                    <div className="flex flex-col items-center  pl-4 ">
                         <div className="flex h-1/2 w-full">
                             <button className="mr-2" onClick={() => { move(false) }}>
                                 <h3>{"<"}</h3>
                             </button>
                             <img
-                                className="rounded-md max-w-8/10 h-fit max-h-5/6 my-auto mx-auto cursor-pointer"
+                                className="rounded-md 
+                                max-w-8/10 h-fit max-h-[300px] md:max-h-[40vh] 
+                                mt-2 mx-auto cursor-pointer"
                                 src={`examples/${currentProject.imageName.toLowerCase()}/${currentExample}.jpg`}
                                 onClick={() => setFullscreenOpen(true)}
                             />
@@ -192,12 +204,6 @@ export default function Projects() {
 
                         </div>
                     </div>
-                    {currentProject.likedLevel === 1 ? (
-                        <img src='draws/Nojado.png' className='h-[100px] -z-1 w-fit absolute bottom-20 left-0' />) :
-                        (<> {currentProject.likedLevel === 2 ?
-                            (<img src='draws/Like.png' className='h-[100px] -z-1 w-fit absolute bottom-20 left-0' />)
-                            : (<img src='draws/Cafe.png' className='h-[110px] -z-1 w-fit absolute bottom-20 left-0' />)}
-                        </>)}
                 </div>
 
             </motion.section>

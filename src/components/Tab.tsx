@@ -13,7 +13,7 @@ export default function Tab({ title, imageName, isActive, click }: Prompts) {
                 hover:bg-black hover:text-white hover:h-full transition-all ease-in-out duration-300`}
             onClick={() => { click() }}>
             <img src={`./icons/projects/${imageName}.png`} className="h-1/2" alt="wolfForest" />
-            <p className="ml-2">{title}</p>
+            <p className={`${isActive ? '': 'md:block hidden'} ml-2`}>{title}</p>
         </article>
     )
 }

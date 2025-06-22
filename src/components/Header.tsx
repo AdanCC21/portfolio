@@ -10,7 +10,7 @@ type Prompts = {
 export default function Header({ projectRef, skillRef, aboutRef, goTo }: Prompts) {
   return (
     <header className='flex w-screen justify-center items-center h-(--header-height)'>
-      <div className='flex w-2/6 justify-between'>
+      <div className='flex md:w-2/6 w-1/2 justify-between'>
         <motion.p
           initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, ease: easeInOut }}
           whileHover={{ scale: 1.2 }}

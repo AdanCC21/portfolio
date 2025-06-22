@@ -4,7 +4,7 @@ import { easeInOut, motion } from 'framer-motion';
 export default function Skills() {
     const [isHovering, setIsHovering] = useState(false);
     return (
-        <div className='h-screen w-screen relative'>
+        <div className='min-h-screen md:h-screen w-screen relative'>
             <section className='mx-[10vw] py-[5vh] h-full relative'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -14,7 +14,10 @@ export default function Skills() {
                     <h1>Skills</h1>
                     <p className='mb-5'>Around my 3 years at university, and on my own, I learned these languages, frameworks, libraries, etc.</p>
                 </motion.div>
-                <motion.section className='grid grid-cols-[repeat(auto-fit,_minmax(50px,_100px))] gap-10'
+                <motion.section
+                    className='grid gap-10
+                    md:grid-cols-[repeat(auto-fit,_minmax(50px,_100px))] 
+                    grid-cols-3'
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, ease: easeInOut }}
@@ -37,7 +40,7 @@ export default function Skills() {
                 </motion.section>
                 <motion.img
                     src="draws/DeHecho.png"
-                    className="h-[250px] w-fit absolute bottom-10 right-0"
+                    className="h-[100px] md:h-[150px] w-fit md:absolute ml-auto md:ml-0 bottom-10 right-0"
                     onHoverStart={() => setIsHovering(true)}
                     onHoverEnd={() => setIsHovering(false)}
                     animate={isHovering ? {
