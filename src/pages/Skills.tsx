@@ -5,12 +5,6 @@ export default function Skills() {
     const [isHovering, setIsHovering] = useState(false);
     return (
         <div className='h-screen w-screen relative'>
-            {/* <img src='draws/Celular.png' className='h-[120px] w-fit absolute top-15 right-10 ' /> */}
-            {/* <motion.img src='draws/React.png' className='h-[200px] w-fit absolute top-30 left-[-100px] '
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 0.3, y: 0 }}
-                transition={{ duration: 0.4, ease: easeInOut }}
-                viewport={{ amount: 0.20, once: true }} /> */}
             <section className='mx-[10vw] py-[5vh] h-full relative'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

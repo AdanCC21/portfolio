@@ -11,12 +11,16 @@ type Prompts = {
 export default function Home({ skillsRef, goTo }: Prompts) {
     return (
         <main className="flex w-screen h-(--home-height) overflow-hidden">
-            <img src='draws/Celular.png' className='h-[80px] w-fit absolute left-5 top-5 scale-x-[-1]' />
+            <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.020, ease: easeInOut }}
+                src='draws/Celular.png' className='h-[80px] w-fit absolute left-5 top-5 scale-x-[-1]' />
             <motion.div className='m-auto h-3/4 relative'
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.020, ease: easeInOut }}>
-                <img src="Draw.png" alt="Dibujo de yuta" className="h-full object-cover m-auto " />
+                <img src="draw.png" alt="Dibujo de yuta" className="h-full object-cover m-auto " />
                 <img src={lineBottom} alt='decoration' className='w-5/6 mx-auto' />
             </motion.div>
             <motion.article className="flex flex-col w-1/2 my-auto"

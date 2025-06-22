@@ -40,7 +40,7 @@ const wolfForest: project = {
 const actOne: project = {
     title: "Act One",
     imageName: "actone",
-    date: "28-05-2025",
+    date: "05-28-2025",
     description: "A social network designed to share stories and gossip, where users can tell their anecdotes in a format divided by acts. The platform also includes a 'focus mode' intended for content creators, which allows reading stories paragraph by paragraph, eliminating distractions for a more immersive experience.",
     whatIDo: "I carried out the entire project, from the idea, planning, design, backend, frontend, and database.",
     tools: ['React', 'JavaScript', 'TypeScript', 'tailwindcss', 'NestJS', 'Prisma'],
@@ -53,7 +53,7 @@ const actOne: project = {
 const cookingHub: project = {
     title: "Cooking Hub",
     imageName: "cookinghub",
-    date: "05-12-2024",
+    date: "12-05-2024",
     description: "A mobile cooking app whose main feature is recipe generation through artificial intelligence. By providing a list of ingredients, you receive a personalized recipe that uses those same ingredients. It also includes other features such as saving recipes, accessing cooking tutorials, marking favorite ingredients, and more.",
     whatIDo: "I was in charge of the design and frontend development, and also assisted with backend and project planning.",
     tools: ['Dart', 'Flutter', 'MongoDB'],
@@ -101,7 +101,7 @@ export default function Projects() {
             if (currentExample < currentProject.examplesCount) setExample(prev => prev + 1)
             else setExample(1);
         } else {
-            if (currentExample > currentProject.examplesCount) setExample(prev => prev - 1)
+            if (currentExample > 1) setExample(prev => prev - 1)
             else setExample(currentProject.examplesCount);
         }
     }
@@ -150,7 +150,7 @@ export default function Projects() {
                     <div className="flex flex-col items-center justify-center h-full pl-4 ">
                         <div className="flex h-1/2 w-full">
                             <button className="mr-2" onClick={() => { move(false) }}>
-                                <h3 className="">{"<"}</h3>
+                                <h3>{"<"}</h3>
                             </button>
                             <img
                                 className="rounded-md max-w-8/10 h-fit max-h-5/6 my-auto mx-auto cursor-pointer"
@@ -159,7 +159,7 @@ export default function Projects() {
                             />
 
                             <button className="ml-2" onClick={() => { move(true) }}>
-                                <h3 className="">{">"}</h3>
+                                <h3>{">"}</h3>
                             </button>
                         </div>
 
