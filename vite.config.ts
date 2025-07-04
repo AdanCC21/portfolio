@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // base:''
-  base:'https://adancc21.github.io/portfolio'
+  base:'/'
+  // base:'https://adancc21.github.io/portfolio'
 })

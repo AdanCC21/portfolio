@@ -22,7 +22,7 @@ export default function Home({ skillsRef, goTo }: Prompts) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.020, ease: easeInOut }}>
-                <img src="draw.png" alt="dibujo" className="h-full object-cover m-auto " />
+                <img src="Draw.png" alt="dibujo" className="h-full object-cover m-auto " />
                 <img src={lineBottom} alt='decoration' className='w-5/6 mx-auto' />
             </motion.div>
             <motion.article

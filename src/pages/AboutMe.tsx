@@ -30,9 +30,10 @@ export default function AboutMe() {
                     </section>
                 </div>
                 <div className='relative w-fit h-fit'>
-                    <img className="h-1/2 md:h-1/3 my-auto rounded-full" src="informal.png" alt="Adan" />
-
-                    <img src='draws/Music2.png' className='h-[60px]  md:h-[110px] w-fit absolute bottom-0 right-0' />
+                    <div className='w-4/5 md:h-1/3 my-auto aspect-square overflow-hidden mx-auto rounded-full'>
+                        <img className="-translate-y-10  ml-auto" src="i.png" alt="Adan" />
+                    </div>
+                    <img src='draws/Music2.png' className='h-[60px] md:h-[110px] w-fit absolute bottom-0 right-0' />
                 </div>
             </section>
         </div>
