@@ -4,12 +4,16 @@ type Prompts = {
   projectRef: any,
   skillRef: any,
   aboutRef: any,
-  goTo: (ref: any) => void
+  goTo: (ref: any) => void,
+  setDarkMode: () => void
 }
 
-export default function Header({ projectRef, skillRef, aboutRef, goTo }: Prompts) {
+export default function Header({ projectRef, skillRef, aboutRef, goTo, setDarkMode }: Prompts) {
   return (
-    <header className='flex w-screen justify-center items-center h-(--header-height)'>
+    <header className='flex w-screen justify-center items-center h-(--header-height) relative'>
+      <button className='absolute left-0' onClick={() => { setDarkMode() }}>
+        <span>Dark</span>
+      </button>
       <div className='flex md:w-2/6 w-1/2 justify-between'>
         <motion.p
           initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, ease: easeInOut }}

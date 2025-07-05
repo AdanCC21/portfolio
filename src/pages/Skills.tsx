@@ -4,8 +4,8 @@ import { easeInOut, motion } from 'framer-motion';
 export default function Skills() {
     const [isHovering, setIsHovering] = useState(false);
     return (
-        <div className='min-h-screen md:h-screen w-screen relative'>
-            <section className='mx-[10vw] py-[5vh] h-full relative'>
+        <div className='min-h-screen w-screen '>
+            <section className='mx-[10vw] py-[5vh] min-h-screen flex flex-col'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -15,9 +15,11 @@ export default function Skills() {
                     <p className='mb-5'>Around my 3 years at university, and on my own, I learned these languages, frameworks, libraries, etc.</p>
                 </motion.div>
                 <motion.section
-                    className='grid gap-10
-                    md:grid-cols-[repeat(auto-fit,_minmax(50px,_100px))] 
-                    grid-cols-3'
+                    className="grid gap-6 
+                    grid-cols-[repeat(auto-fit,minmax(50px,1fr))]
+                    sm:grid-cols-[repeat(auto-fit,minmax(60px,1fr))]
+                    lg:grid-cols-[repeat(auto-fit,minmax(100px,1fr))]
+                    "
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, ease: easeInOut }}
@@ -38,9 +40,10 @@ export default function Skills() {
                     <LanguageItem key={`s-html`} imageSource='./icons/languages/html.svg' title='HTML' />
                     <LanguageItem key={`s-css`} imageSource='./icons/languages/css.svg' title='CSS' />
                 </motion.section>
+                
                 <motion.img
                     src="draws/DeHecho.png"
-                    className="h-[100px] md:h-[150px] w-fit md:absolute ml-auto md:ml-0 bottom-10 right-0"
+                    className="h-[100px] md:h-[100px] lg:h-[150px] w-fit ml-auto mt-auto"
                     onHoverStart={() => setIsHovering(true)}
                     onHoverEnd={() => setIsHovering(false)}
                     animate={isHovering ? {

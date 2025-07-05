@@ -7,21 +7,30 @@ import Skills from "./pages/Skills"
 import line from './assets/decoration/line.svg';
 import line2 from './assets/decoration/line2.svg';
 import { easeInOut, motion } from 'framer-motion';
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export default function App() {
   const skillsRef = useRef(null);
   const projectRef = useRef(null);
   const aboutRef = useRef(null);
 
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.theme === 'dark';
+  });
+
+  const changeTheme = () => {
+    isDark ? localStorage.theme = 'light' : localStorage.theme = 'dark'
+    setIsDark(prev => !prev);
+  }
+
   const scrollTo = (ref: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="overflow-x-hidden overflow-y-hidden">
+    <div className={`${isDark ? 'bg-dark' : 'bg-light'} overflow-x-hidden overflow-y-hidden`}>
 
-      <Header projectRef={projectRef} skillRef={skillsRef} aboutRef={aboutRef} goTo={scrollTo} />
+      <Header projectRef={projectRef} skillRef={skillsRef} aboutRef={aboutRef} goTo={scrollTo} setDarkMode={changeTheme} />
       <Home skillsRef={skillsRef} goTo={scrollTo} />
 
       <img src={line} className="px-[15vw] my-5" />

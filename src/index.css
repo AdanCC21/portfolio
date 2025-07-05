@@ -8,17 +8,28 @@
 
 html {
   font-size: 24px;
-  background-color: #f1f1f1;
 }
 
-@media (max-width:768px){
-  html{
+.bg-dark {
+  background-color: #1f1f1f;
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.bg-light {
+  background-color: #f1f1f1;
+  color: black;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width:768px) {
+  html {
     font-size: 16px;
   }
 }
 
-@media (max-width:350px){
-  html{
+@media (max-width:350px) {
+  html {
     font-size: 14px;
   }
 }

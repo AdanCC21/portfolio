@@ -22,6 +22,8 @@ export default function LanguageItem({ imageSource, title, small,key }: Prompts)
         bottom = LargeB;
     }
 
+    const isDarkTheme = localStorage.theme === 'dark';
+
     return (
         <article key={key} className='w-full h-full'>
             <img className='h-1/2 m-auto' src={imageSource} alt={title} />
@@ -31,7 +33,7 @@ export default function LanguageItem({ imageSource, title, small,key }: Prompts)
                 <p className='text-center' >{title}</p>
             )}
             
-            <img className='mx-auto' src={bottom} alt='underline' />
+            <img className={`${isDarkTheme && 'invert'} mx-auto`} src={bottom} alt='underline' />
         </article>
     )
 }

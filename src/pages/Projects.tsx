@@ -116,8 +116,8 @@ export default function Projects() {
             >
                 <h1 className="mb-3">Projects</h1>
                 <img src='draws/Laptop.png'
-                    className='h-[80px] md:h-[180px] -z-1 w-fit absolute top-0 right-0' />
-                <section className="flex pl-2 h-[50px] border-b-2 border-black">
+                    className='h-[80px] md:h-[180px] w-fit absolute top-0 right-0' />
+                <section className="flex pl-2 h-[50px]  border-b-2 border-black">
                     <Tab imageName={actOne.imageName} title={actOne.title} isActive={currentProject === actOne} click={() => { setCurrentProject(actOne); setExample(1) }} />
                     <Tab imageName={wolfForest.imageName} title={wolfForest.title} isActive={currentProject === wolfForest} click={() => { setCurrentProject(wolfForest); setExample(1) }} />
                     <Tab imageName={cookingHub.imageName} title={cookingHub.title} isActive={currentProject === cookingHub} click={() => { setCurrentProject(cookingHub); setExample(1) }} />
@@ -151,11 +151,11 @@ export default function Projects() {
                 <div className="flex flex-col-reverse md:flex-col md:w-1/2 h-full my-3 md:my-auto items-center justify-center relative">
                     {currentProject.likedLevel === 1 ? (
                         <img src='draws/Nojado.png'
-                            className='h-[50px] md:h-[100px] ml-auto -z-1 w-fit' />) :
+                            className='h-[50px] md:h-[100px] ml-auto  w-fit' />) :
                         (<> {currentProject.likedLevel === 2 ?
                             (<img src='draws/Like.png'
-                                className='h-[50px] md:h-[100px] ml-auto -z-1 w-fit' />)
-                            : (<img src='draws/Cafe.png' className='h-[50px] md:h-[100px] ml-auto -z-1 w-fit' />)}
+                                className='h-[50px] md:h-[100px] ml-auto  w-fit' />)
+                            : (<img src='draws/Cafe.png' className='h-[50px] md:h-[100px] ml-auto  w-fit' />)}
                         </>)}
                     <div className="flex flex-col items-center  pl-4 ">
                         <div className="flex h-1/2 w-full">
