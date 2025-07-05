@@ -31,7 +31,7 @@ export default function AboutMe() {
                 </div>
                 <div className='relative w-fit h-fit'>
                     <div className='w-4/5 md:h-1/3 my-auto aspect-square overflow-hidden mx-auto rounded-full'>
-                        <img className="-translate-y-10  ml-auto" src="i.png" alt="Adan" />
+                        <img className="-translate-y-10  ml-auto" src="i.jpg" alt="Adan" />
                     </div>
                     <img src='draws/Music2.png' className='h-[60px] md:h-[110px] w-fit absolute bottom-0 right-0' />
                 </div>
